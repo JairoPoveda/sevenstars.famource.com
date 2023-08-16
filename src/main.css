@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.shownView{
-    display: block
+body{
+    font-family: "inter";
 }
-.hiddenView{
+.container{
+    max-width: 1196px;
+    margin: auto;
+}
+.dropdown-list{
     display: none;
 }
 .active{
     color: #002A93;
+}
+.default-btn{
+    background: #002A93;
+    border-radius: 9999px;
+    font-size: 16px;
+    color: #fff;
 }

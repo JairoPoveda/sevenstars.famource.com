@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
-    <header>
+    <header class="shadow-menuShadow">
         <div class="bg-[#002A93] md:h-12">
-            <div class="max-w-[1196px] m-auto p-2 bg-[#002A93] md:flex justify-between items-center">
-                <h1 class="text-xs truncate md:text-sm text-[#D7DDEE]">আমাদের Amazon FBA ও FBM অনলাইন কোর্সের ভর্তির কার্যক্রম চলছে... </h1>
+            <div class="container p-2 bg-[#002A93] md:flex justify-between items-center">
+                <h3 class="text-xs truncate md:text-sm text-[#D7DDEE]">আমাদের Amazon FBA ও FBM অনলাইন কোর্সের ভর্তির কার্যক্রম চলছে... </h3>
                 <div>
                     <div class="flex justify-between pt-2 md:pt-0">
                         <div class="flex items-center">
@@ -40,13 +41,13 @@
                             </a>
                         </div>
                         <div class="ml-4">
-                            <button class="text-sm text-[#303950] h-6 md:h-8 w-[80px] bg-[#E6EBF6] rounded-full">বাং-ENG</button>
+                            <button class="text-sm text-[#303950] h-6 md:h-8 w-[80px] bg-[#E6EBF6] rounded-full hover:bg-[#F9901C] hover:text-white">বাং-ENG</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>        
-        <div class="max-w-[1196px] m-auto p-3 md:py-[27px] flex justify-between items-center">
+        <div class="container p-4 md:px-0 md:py-[27px] flex justify-between items-center">
             <div>
                 <a href="#">
                     <img src="../src/assets/images/header/logo.png" alt="logo">
@@ -54,23 +55,23 @@
             </div>
             <div class="hidden md:block">
                 <ul class="flex">
-                    <li class="text-base px-3 active">
+                    <li class="text-base px-3 font-medium active hover:text-[#002A93] hover:font-semibold">
                         <a href="">হোম</a>
                     </li>
-                    <li class="text-base px-3">
+                    <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
                         <a href="">কোর্সের বিস্তারিত</a>
                     </li>
-                    <li class="text-base px-3">
+                    <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
                         <a href="">স্টুডেন্ট ফিডব্যাক</a>
                     </li>
-                    <li class="text-base px-3">
+                    <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
                         <a href="">আমাদের টিম</a>
                     </li>
                 </ul>
             </div>
             <div class="hidden md:block">
-                <button class="text-base text-[#303950] mr-2 h-11 w-[122px] bg-[#002a9312] rounded-full">যোগাযোগ</button>
-                <button class="text-base text-white h-11 w-[122px] bg-[#002A93] rounded-full">পেমেন্ট করুন</button>
+                <button class="text-base text-[#303950] mr-2 h-11 w-[122px] bg-[#002a9312] rounded-full hover:bg-[#F9901C] hover:text-white">যোগাযোগ</button>
+                <button class="h-11 w-[122px] default-btn hover:bg-[#F9901C] hover:text-white">পেমেন্ট করুন</button>
             </div>
             <div class="block md:hidden">
                 <button class="p-2 rounded navbtn">
@@ -80,25 +81,90 @@
                 </button>
             </div>               
         </div>    
-        <div class="hiddenView md:hidden" id="nav-menu">
-            <ul class="bg-[#002A9350]">
-                <li class="text-base p-3 border-b menu-active">
+        <div id="nav-menu">
+            <ul class="bg-[#002A93] w-full z-999 absolute text-white">
+                <li class="dropdown-list md:hidden text-base p-3 border-b menu-active">
                     <a href="">হোম</a>
                 </li>
-                <li class="text-base p-3 border-b">
+                <li class="dropdown-list text-base p-3 border-b">
                     <a href="">কোর্সের বিস্তারিত</a>\
                 </li>
-                <li class="text-base p-3 border-b">
+                <li class="dropdown-list text-base p-3 border-b">
                     <a href="">স্টুডেন্ট ফিডব্যাক</a>
                 </li>
-                <li class="text-base p-3">
+                <li class="dropdown-list text-base p-3">
                     <a href="">আমাদের টিম</a>
                 </li>
             </ul>
         </div>        
     </header>
-    <div class="container">
-
+    <div class="container p-4 md:p-0 md:pb-10">
+        <div class="md:grid md:grid-cols-2 md:gap-2">
+            <div class="md:pt-[113px]">
+                <h1 class="text-lg md:text-[42px] text-[#303950] mb-6 md:leading-[50.83px] font-bold">
+                    আমাজনে সাফল্য আনলক করুন FBA এবং FBM মাস্টারি সাকসেস কোর্সে  Seven Stars এর সাথে...
+                </h1>
+                <h2 class="text-base md:text-xl text-[#5A6174] font-normal md:leading-[24.2px] mb-8 md:mb-10 font-normal">
+                    মেন্টরদের নির্দেশনা, অমূল্য অন্তর্দৃষ্টি অর্জন, বিপণন কৌশল আয়ত্ত করা এবং একটি স্বনামধন্য ব্র্যান্ড তৈরি করে অ্যামাজন বিক্রিতে সাফল্য আবিষ্কার করুন এবং নথিভুক্ত করুন এবং আপনার সম্পূর্ণ সম্ভাবনা আনলক করুন.
+                </h2>
+                <button class="default-btn py-2 px-5 md:py-4 md:px-[26px] hover:bg-[#F9901C] hover:text-white">কোর্সে জয়েন করুন</button>
+            </div>
+            <div>
+                <img class="w-full" src="assets/images/container/hero_top.png" alt="Hero top">
+            </div>
+        </div>
+        <div class="mt-6 md:mt-[120px] rounded-[20px] bg-[#0D1322] pt-10 pb-7 px-5 md:pt-20 md:pb-[92px] md:px-[75px] text-center">
+            <h2 class="font-bold text-xl leading-7 md:text-[34px] md:leading-[41.15px] text-[#CBD3E8] mb-5">
+                আমরা হাজার হাজার মানুষকে আমাজনে বিজনেস করতে সাহায্য করি!
+            </h2>
+            <h3 class="font-normal text-base md:text-xl leading-[24.2px] text-[#ACB4C8] mb-8 md:mb-[87px]">
+                আমাদের ব্যাপক কোর্সের মাধ্যমে আপনার Amazon উপার্জনের সম্ভাবনা আনলক করুন. সর্বাধিক লাভ এবং প্রতিযোগিতামূলক বাজারে সফল হতে সর্বোত্তম পণ্য বিক্রির কৌশলগুলি শিখুন. আজ আর্থিক স্বাধীনতা আপনার যাত্রা শুরু!
+            </h3>
+            <div class="md:grid md:grid-cols-3 gap-[22px]">
+                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_live.png" alt="Live Class">
+                    <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইভ ক্লাস</span>
+                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                        আমাদের প্রতিটি ক্লাস সরাসরি গুগল মিটে লাইভ হয়ে থাকে. আপনি সাচ্ছন্দ্য ভাবে সম্পন্ন কোর্সটি করতে পারবেন আমাদের সাথে.
+                    </p>
+                </div>
+                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_record.png" alt="Record Class">
+                    <span class="text-xl md:text-2xl text-white block mb-[18px]">রেকর্ড ক্লাস</span>
+                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                        আমাদের প্রতিটি লাইভ ক্লাসগুলো রেকর্ড করে আমাদের স্টুডেন্টদেরকে প্রদান করে থাকি.। যেন তারা প্রাক্টিস করার সময় রেকর্ড ক্লাসের সহযোগিতা নিতে পারে.
+                    </p>
+                </div>
+                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_ontime.png" alt="Ontime Class">
+                    <span class="text-xl md:text-2xl text-white block mb-[18px]">২৪/৭ অনটাইম রিপ্লাই</span>
+                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                        কোর্স চলাকালীন যেকোনো সমস্যার যেকোনো সমস্যায় আমাদেরকে প্রতিদিন যেকোনো সময়ে আপনার পাশে পাবেন.
+                    </p>
+                </div>
+                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_guideline.png" alt="Guide Line">
+                    <span class="text-xl md:text-2xl text-white block mb-[18px]">সঠিক গাইডলাইন</span>
+                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                        একদম কিছু না জানলেও আমরা শুরু থেকে শেষ অব্ধি যথাযথ গাইডলাইন দিয়ে থাকি। আমাদের গাইডলাইন অনুযায়ী আপনার প্রচেষ্টা সহজ হবে.
+                    </p>
+                </div>
+                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_students.png" alt="Student Community">
+                    <span class="text-xl md:text-2xl text-white block mb-[18px]">এক্সপার্ট স্টুডেন্ট কমিউনিটি</span>
+                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                        আমাদের স্টুডেন্টদেরকে আমাদের এক্সপার্ট স্টুডেন্ট কমিউনিটিতে যুক্ত করে দেই. শেখা বা কাজ করা কালীন আপনারা এই কমিউনিটি থেকে সহযোগিতা পাবেন.
+                    </p>
+                </div>
+                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_ontime.png" alt="Life Time">
+                    <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইফটাইম সাপোর্ট</span>
+                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                        আপনার কোর্স সম্পন্ন শেষ হলেও আপনার পাশে আমাদেরকে লাইফটাইম পাচ্ছেন। আপনি পরবর্তীতেও কোনো সমস্যায় পড়লে আমাদের সহযোগিতা পাচ্ছেন.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <script
         src="https://code.jquery.com/jquery-3.7.0.min.js"
