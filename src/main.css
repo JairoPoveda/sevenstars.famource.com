@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shownView{
+    display: block
+}
+.hiddenView{
+    display: none;
+}
+.active{
+    color: #002A93;
+}
