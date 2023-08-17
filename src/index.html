@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="assets/css/splide.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="shadow-menuShadow">
-        <div class="bg-[#002A93] md:h-12">
-            <div class="container p-2 bg-[#002A93] md:flex justify-between items-center">
+    <header>
+        <div class="bg-[#002A93] md:h-12 font-inter">
+            <div class="container p-2 bg-[#002A93] hidden md:flex justify-between items-center">
                 <h3 class="text-xs truncate md:text-sm text-[#D7DDEE]">আমাদের Amazon FBA ও FBM অনলাইন কোর্সের ভর্তির কার্যক্রম চলছে... </h3>
                 <div>
                     <div class="flex justify-between pt-2 md:pt-0">
                         <div class="flex items-center">
                             <a href="">
-                                <img src="assets/images/header/tiktok_icon.png" class="mx-3 md:mx-1 w-4 h-4" alt="Social Tiktok">
+                                <img src="assets/images/header/tiktok_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Tiktok">
                             </a>
                             <a href="">
-                                <img src="assets/images/header/whatsapp_icon.png" class="mx-3 md:mx-1 w-4 h-4" alt="Social Whatsapp">
+                                <img src="assets/images/header/whatsapp_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Whatsapp">
                             </a>
                             <a href="">
-                                <img src="assets/images/header/facebook_icon.png" class="mx-3 md:mx-1 w-4 h-4" alt="Social Facebook">
+                                <img src="assets/images/header/facebook_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Facebook">
                             </a>
                             <a href="">
-                                <img src="assets/images/header/instagram_icon.png" class="mx-3 md:mx-1 w-4 h-4" alt="Social Instagram">
+                                <img src="assets/images/header/instagram_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Instagram">
                             </a>
                             <a href="">
-                                <img src="assets/images/header/vector_icon.png" class="mx-3 md:mx-1 w-4 h-4" alt="Social Vector">
+                                <img src="assets/images/header/vector_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Vector">
                             </a>
                             <a href="">
-                                <img src="assets/images/header/youtube_icon.png" class="mx-3 md:mx-1 w-4 h-4" alt="Social Youtube">
+                                <img src="assets/images/header/youtube_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Youtube">
                             </a>
                         </div>
                         <div class="h-8 w-px mx-2 bg-[#566EA9]"></div>
-                        <div class="items-center flex">
-                            <a href="tel:966 53 546 9321" class="flex text-white">
-                                <img src="assets/images/header/phone_icon.png" class="w-6 h-6" alt="call">
+                        <div class="flex items-center">
+                            <a href="tel:966 53 546 9321" class="flex text-white items-center">
+                                <img src="assets/images/header/phone_icon.svg" class="w-6 h-5" alt="call">
                                 <span class="hidden md:block">+966 53 546 9321</span>
                             </a>
                         </div>
@@ -46,131 +49,921 @@
                     </div>
                 </div>
             </div>
-        </div>        
-        <div class="container p-4 md:px-0 md:py-[27px] flex justify-between items-center">
-            <div>
-                <a href="#">
-                    <img src="../src/assets/images/header/logo.png" alt="logo">
-                </a>
+        </div>
+        <div id="header" class="shadow-menuShadow h-12 md:h-auto flex items-center md:block font-inter">        
+            <div class="container px-4 md:px-0 md:py-[27px] flex justify-between items-center">
+                <div>
+                    <a href="#">
+                        <img class="w-[84px] md:w-auto" src="../src/assets/images/header/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex">
+                        <li class="text-base px-3 font-medium active hover:text-[#002A93] hover:font-semibold">
+                            <a href="">হোম</a>
+                        </li>
+                        <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
+                            <a href="">কোর্সের বিস্তারিত</a>
+                        </li>
+                        <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
+                            <a href="">স্টুডেন্ট ফিডব্যাক</a>
+                        </li>
+                        <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
+                            <a href="">আমাদের টিম</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hidden md:block">
+                    <button class="text-base text-[#303950] mr-2 h-11 w-[122px] bg-[#002a9312] rounded-full hover:bg-[#F9901C] hover:text-white">যোগাযোগ</button>
+                    <button class="h-11 w-[122px] default-btn hover:bg-[#F9901C] hover:text-white">পেমেন্ট করুন</button>
+                </div>
+                <div class="flex md:hidden items-center">
+                    <div class="mr-3">
+                        <button class="text-[11px] text-[#303950] font-medium leading-[13.31px] h-[22px] w-[60px] bg-[#E6EBF6] rounded-full hover:bg-[#F9901C] hover:text-white">
+                            বাং-ENG
+                        </button>
+                    </div>                    
+                    <button class="rounded navbtn">
+                        <span class="w-[22.17px] h-[2.65px] bg-[#002A93] block mb-1"></span>
+                        <span class="w-[22.17px] h-[2.65px] bg-[#002A93] mb-1 block"></span>
+                        <span class="w-[22.17px] h-[2.65px] bg-[#002A93] block"></span>
+                    </button>                    
+                </div>               
             </div>
-            <div class="hidden md:block">
-                <ul class="flex">
-                    <li class="text-base px-3 font-medium active hover:text-[#002A93] hover:font-semibold">
+        </div>
+        <div id="nav-menu font-inter">
+            <div class="flex">
+                <ul class="bg-[#002A93] w-full z-999 fixed top-12 text-white">
+                    <li class="dropdown-list md:hidden text-base p-3 border-b menu-active">
                         <a href="">হোম</a>
                     </li>
-                    <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
-                        <a href="">কোর্সের বিস্তারিত</a>
+                    <li class="dropdown-list text-base p-3 border-b">
+                        <a href="">কোর্সের বিস্তারিত</a>\
                     </li>
-                    <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
+                    <li class="dropdown-list text-base p-3 border-b">
                         <a href="">স্টুডেন্ট ফিডব্যাক</a>
                     </li>
-                    <li class="text-base px-3 font-medium hover:text-[#002A93] hover:font-semibold">
+                    <li class="dropdown-list text-base p-3">
                         <a href="">আমাদের টিম</a>
                     </li>
                 </ul>
+                <div>
+
+                </div>
             </div>
-            <div class="hidden md:block">
-                <button class="text-base text-[#303950] mr-2 h-11 w-[122px] bg-[#002a9312] rounded-full hover:bg-[#F9901C] hover:text-white">যোগাযোগ</button>
-                <button class="h-11 w-[122px] default-btn hover:bg-[#F9901C] hover:text-white">পেমেন্ট করুন</button>
-            </div>
-            <div class="block md:hidden">
-                <button class="p-2 rounded navbtn">
-                    <span class="w-5 h-1 bg-[#002A93] block"></span>
-                    <span class="w-5 h-1 bg-[#002A93] my-1 block"></span>
-                    <span class="w-5 h-1 bg-[#002A93] block"></span>
-                </button>
-            </div>               
-        </div>    
-        <div id="nav-menu">
-            <ul class="bg-[#002A93] w-full z-999 absolute text-white">
-                <li class="dropdown-list md:hidden text-base p-3 border-b menu-active">
-                    <a href="">হোম</a>
-                </li>
-                <li class="dropdown-list text-base p-3 border-b">
-                    <a href="">কোর্সের বিস্তারিত</a>\
-                </li>
-                <li class="dropdown-list text-base p-3 border-b">
-                    <a href="">স্টুডেন্ট ফিডব্যাক</a>
-                </li>
-                <li class="dropdown-list text-base p-3">
-                    <a href="">আমাদের টিম</a>
-                </li>
-            </ul>
         </div>        
     </header>
-    <div class="container p-4 md:p-0 md:pb-10">
-        <div class="md:grid md:grid-cols-2 md:gap-2">
-            <div class="md:pt-[113px]">
-                <h1 class="text-lg md:text-[42px] text-[#303950] mb-6 md:leading-[50.83px] font-bold">
-                    আমাজনে সাফল্য আনলক করুন FBA এবং FBM মাস্টারি সাকসেস কোর্সে  Seven Stars এর সাথে...
-                </h1>
-                <h2 class="text-base md:text-xl text-[#5A6174] font-normal md:leading-[24.2px] mb-8 md:mb-10 font-normal">
-                    মেন্টরদের নির্দেশনা, অমূল্য অন্তর্দৃষ্টি অর্জন, বিপণন কৌশল আয়ত্ত করা এবং একটি স্বনামধন্য ব্র্যান্ড তৈরি করে অ্যামাজন বিক্রিতে সাফল্য আবিষ্কার করুন এবং নথিভুক্ত করুন এবং আপনার সম্পূর্ণ সম্ভাবনা আনলক করুন.
+    <div class="container p-4 md:p-0 font-inter">
+        <section class="hero">
+            <div class="pt-[6px] md:grid md:grid-cols-2 md:gap-2">
+                <div class="mb-0.5 md:pt-[113px]">
+                    <h1 class="text-[26px] md:text-[42px] text-[#303950] mb-2 leading-[31.47px] md:leading-[50.83px] font-bold">
+                        আমাজনে সাফল্য আনলক করুন FBA এবং FBM মাস্টারি সাকসেস কোর্সে  Seven Stars এর সাথে...
+                    </h1>
+                    <h2 class="text-[14px] md:text-base md:text-xl text-[#5A6174] font-normal leading-[16.94px] md:leading-[24.2px] mb-[19px] md:mb-[41px]">
+                        মেন্টরদের নির্দেশনা, অমূল্য অন্তর্দৃষ্টি অর্জন, বিপণন কৌশল আয়ত্ত করা এবং একটি স্বনামধন্য ব্র্যান্ড তৈরি করে অ্যামাজন বিক্রিতে সাফল্য আবিষ্কার করুন এবং নথিভুক্ত করুন এবং আপনার সম্পূর্ণ সম্ভাবনা আনলক করুন.
+                    </h2>
+                    <button class="default-btn text-base font-semibold py-3 px-6 md:py-[19px] md:px-[26px] hover:bg-[#F9901C] hover:text-white">কোর্সে জয়েন করুন</button>
+                </div>
+                <div>
+                    <img class="w-full" src="assets/images/service/hero_top.svg" alt="Hero top">
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="mt-[101px] md:mt-[120px] rounded-[20px] bg-[#0D1322] pt-10 pb-7 px-5 md:pt-20 md:pb-[92px] md:px-[75px] text-center">
+                <h2 class="font-bold text-xl leading-7 md:text-[34px] md:leading-[41.15px] text-[#CBD3E8] mb-5">
+                    আমরা হাজার হাজার মানুষকে আমাজনে বিজনেস করতে সাহায্য করি!
                 </h2>
-                <button class="default-btn py-2 px-5 md:py-4 md:px-[26px] hover:bg-[#F9901C] hover:text-white">কোর্সে জয়েন করুন</button>
-            </div>
-            <div>
-                <img class="w-full" src="assets/images/container/hero_top.png" alt="Hero top">
-            </div>
-        </div>
-        <div class="mt-6 md:mt-[120px] rounded-[20px] bg-[#0D1322] pt-10 pb-7 px-5 md:pt-20 md:pb-[92px] md:px-[75px] text-center">
-            <h2 class="font-bold text-xl leading-7 md:text-[34px] md:leading-[41.15px] text-[#CBD3E8] mb-5">
-                আমরা হাজার হাজার মানুষকে আমাজনে বিজনেস করতে সাহায্য করি!
-            </h2>
-            <h3 class="font-normal text-base md:text-xl leading-[24.2px] text-[#ACB4C8] mb-8 md:mb-[87px]">
-                আমাদের ব্যাপক কোর্সের মাধ্যমে আপনার Amazon উপার্জনের সম্ভাবনা আনলক করুন. সর্বাধিক লাভ এবং প্রতিযোগিতামূলক বাজারে সফল হতে সর্বোত্তম পণ্য বিক্রির কৌশলগুলি শিখুন. আজ আর্থিক স্বাধীনতা আপনার যাত্রা শুরু!
-            </h3>
-            <div class="md:grid md:grid-cols-3 gap-[22px]">
-                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
-                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_live.png" alt="Live Class">
-                    <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইভ ক্লাস</span>
-                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
-                        আমাদের প্রতিটি ক্লাস সরাসরি গুগল মিটে লাইভ হয়ে থাকে. আপনি সাচ্ছন্দ্য ভাবে সম্পন্ন কোর্সটি করতে পারবেন আমাদের সাথে.
-                    </p>
-                </div>
-                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
-                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_record.png" alt="Record Class">
-                    <span class="text-xl md:text-2xl text-white block mb-[18px]">রেকর্ড ক্লাস</span>
-                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
-                        আমাদের প্রতিটি লাইভ ক্লাসগুলো রেকর্ড করে আমাদের স্টুডেন্টদেরকে প্রদান করে থাকি.। যেন তারা প্রাক্টিস করার সময় রেকর্ড ক্লাসের সহযোগিতা নিতে পারে.
-                    </p>
-                </div>
-                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
-                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_ontime.png" alt="Ontime Class">
-                    <span class="text-xl md:text-2xl text-white block mb-[18px]">২৪/৭ অনটাইম রিপ্লাই</span>
-                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
-                        কোর্স চলাকালীন যেকোনো সমস্যার যেকোনো সমস্যায় আমাদেরকে প্রতিদিন যেকোনো সময়ে আপনার পাশে পাবেন.
-                    </p>
-                </div>
-                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
-                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_guideline.png" alt="Guide Line">
-                    <span class="text-xl md:text-2xl text-white block mb-[18px]">সঠিক গাইডলাইন</span>
-                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
-                        একদম কিছু না জানলেও আমরা শুরু থেকে শেষ অব্ধি যথাযথ গাইডলাইন দিয়ে থাকি। আমাদের গাইডলাইন অনুযায়ী আপনার প্রচেষ্টা সহজ হবে.
-                    </p>
-                </div>
-                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
-                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_students.png" alt="Student Community">
-                    <span class="text-xl md:text-2xl text-white block mb-[18px]">এক্সপার্ট স্টুডেন্ট কমিউনিটি</span>
-                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
-                        আমাদের স্টুডেন্টদেরকে আমাদের এক্সপার্ট স্টুডেন্ট কমিউনিটিতে যুক্ত করে দেই. শেখা বা কাজ করা কালীন আপনারা এই কমিউনিটি থেকে সহযোগিতা পাবেন.
-                    </p>
-                </div>
-                <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
-                    <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/container/service_ontime.png" alt="Life Time">
-                    <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইফটাইম সাপোর্ট</span>
-                    <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
-                        আপনার কোর্স সম্পন্ন শেষ হলেও আপনার পাশে আমাদেরকে লাইফটাইম পাচ্ছেন। আপনি পরবর্তীতেও কোনো সমস্যায় পড়লে আমাদের সহযোগিতা পাচ্ছেন.
-                    </p>
+                <h3 class="font-normal text-base md:text-xl leading-[24.2px] text-[#ACB4C8] mb-8 md:mb-[87px]">
+                    আমাদের ব্যাপক কোর্সের মাধ্যমে আপনার Amazon উপার্জনের সম্ভাবনা আনলক করুন. সর্বাধিক লাভ এবং প্রতিযোগিতামূলক বাজারে সফল হতে সর্বোত্তম পণ্য বিক্রির কৌশলগুলি শিখুন. আজ আর্থিক স্বাধীনতা আপনার যাত্রা শুরু!
+                </h3>
+                <div class="md:grid md:grid-cols-3 gap-[22px]">
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                        <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_live.svg" alt="Live Class">
+                        <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইভ ক্লাস</span>
+                        <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                            আমাদের প্রতিটি ক্লাস সরাসরি গুগল মিটে লাইভ হয়ে থাকে. আপনি সাচ্ছন্দ্য ভাবে সম্পন্ন কোর্সটি করতে পারবেন আমাদের সাথে.
+                        </p>
+                    </div>
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                        <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_record.svg" alt="Record Class">
+                        <span class="text-xl md:text-2xl text-white block mb-[18px]">রেকর্ড ক্লাস</span>
+                        <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                            আমাদের প্রতিটি লাইভ ক্লাসগুলো রেকর্ড করে আমাদের স্টুডেন্টদেরকে প্রদান করে থাকি.। যেন তারা প্রাক্টিস করার সময় রেকর্ড ক্লাসের সহযোগিতা নিতে পারে.
+                        </p>
+                    </div>
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                        <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_ontime.svg" alt="Ontime Class">
+                        <span class="text-xl md:text-2xl text-white block mb-[18px]">২৪/৭ অনটাইম রিপ্লাই</span>
+                        <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                            কোর্স চলাকালীন যেকোনো সমস্যার যেকোনো সমস্যায় আমাদেরকে প্রতিদিন যেকোনো সময়ে আপনার পাশে পাবেন.
+                        </p>
+                    </div>
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                        <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_guideline.svg" alt="Guide Line">
+                        <span class="text-xl md:text-2xl text-white block mb-[18px]">সঠিক গাইডলাইন</span>
+                        <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                            একদম কিছু না জানলেও আমরা শুরু থেকে শেষ অব্ধি যথাযথ গাইডলাইন দিয়ে থাকি। আমাদের গাইডলাইন অনুযায়ী আপনার প্রচেষ্টা সহজ হবে.
+                        </p>
+                    </div>
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                        <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_students.svg" alt="Student Community">
+                        <span class="text-xl md:text-2xl text-white block mb-[18px]">এক্সপার্ট স্টুডেন্ট কমিউনিটি</span>
+                        <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                            আমাদের স্টুডেন্টদেরকে আমাদের এক্সপার্ট স্টুডেন্ট কমিউনিটিতে যুক্ত করে দেই. শেখা বা কাজ করা কালীন আপনারা এই কমিউনিটি থেকে সহযোগিতা পাবেন.
+                        </p>
+                    </div>
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                        <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_lifetime.svg" alt="Life Time">
+                        <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইফটাইম সাপোর্ট</span>
+                        <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
+                            আপনার কোর্স সম্পন্ন শেষ হলেও আপনার পাশে আমাদেরকে লাইফটাইম পাচ্ছেন। আপনি পরবর্তীতেও কোনো সমস্যায় পড়লে আমাদের সহযোগিতা পাচ্ছেন.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="course">
+            <div class="mt-[81px] md:mt-[130px] text-center">
+                <h3 class="text-xl md:text-2xl leading-[29.05px] font-bold text-[#002A93] mb-2.5">কোর্সের বিস্তারিত</h3>
+                <h2 class="text-2xl md:text-4xl leading-7 md:leading-[43.57px] font-bold text-[#303950] mb-8 md:mb-[46px]">আমাদের কোর্সে যে যে মডিউল থাকছে</h2>
+                <div class="md:grid md:grid-cols-2 md:gap-4 service">
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/amazon_account_icon.svg" alt="Amazon Account Icon">
+                        </div>
+                        <div class="subject">
+                            আমাজন সেলার একাউন্ট ক্রিয়েশন
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/brand_icon.svg" alt="Brand Icon">
+                        </div>
+                        <div class="subject">
+                            হোলসেল এবং ব্রান্ড অনুমোদন
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/product_research_icon.svg" alt="Product Research Icon">
+                        </div>
+                        <div class="subject">
+                            প্রোডাক্ট রিসার্চ
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/FBA_icon.svg" alt="Listing Creation FBA and FBM programs">
+                        </div>
+                        <div class="subject">
+                            লিষ্টিং ক্রিয়েশন FBA এবং FBM প্রোগ্রাম
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/optimize_icon.svg" alt="Product Optimize Icon">
+                        </div>
+                        <div class="subject">
+                            প্রোডাক্টস অপটিমাইজেশন এবং কনভারসেশন ট্রিকস
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/ATS_icon.svg" alt="How to Create an ATS Service">
+                        </div>
+                        <div class="subject">
+                            কিভাবে ATS পরিষেবা তৈরি করবেন
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/product_list_icon.svg" alt="Product List Icon">
+                        </div>
+                        <div class="subject">
+                            পণ্য তালিকা
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/shipping_icon.svg" alt="Shipping">
+                        </div>
+                        <div class="subject">
+                            Esy শিপ
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/product_manage_icon.svg" alt="Product Management Icon">
+                        </div>
+                        <div class="subject">
+                            প্রোডাক্ট ম্যানেজমেন্ট
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/keyword_icon.svg" alt="Keyword ranking in Amazon search results">
+                        </div>
+                        <div class="subject">
+                            কি-ওয়ার্ড র‍্যাংকিং আমাজন সার্চ রেজাল্ট
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/product_list_icon.svg" alt="PPC Campaign Icon">
+                        </div>
+                        <div class="subject">
+                            PPC ক্যাম্পেইন
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/multiple_write_icon.svg" alt="Multiple Write Products">
+                        </div>
+                        <div class="subject">
+                            পণ্যের শিরোনাম এবং পণ্যের বিবরণ লেখার একাধিক উপায়
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/how_list_icon.svg" alt="How to List Products Icon">
+                        </div>
+                        <div class="subject">
+                            কিভাবে একক পণ্য এবং বহু-ভেরিয়েন্ট পণ্য তালিকাভুক্ত করা যায়
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/supplier_research_icon.svg" alt="Supplier Research Icon">
+                        </div>
+                        <div class="subject">
+                            সাপ্লাইয়ার রিসার্চ
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/shipping_manage_icon.svg" alt="Shipping Management Icon">
+                        </div>
+                        <div class="subject">
+                            শিপিং ম্যানেজমেন্ট
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/webstore_icon.svg" alt="Web store and order management">
+                        </div>
+                        <div class="subject">
+                            ওয়েব স্টোর এবং অর্ডার ব্যবস্থাপনা
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/amazon_review_icon.svg" alt="Amazon Health, reviews, feedback and ratings Icon">
+                        </div>
+                        <div class="subject">
+                            Amazon Health, রিভিউ, ফিডব্যাক এবং রেটিং
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/account_setup_icon.svg" alt="Local and International Amazon account Setup">
+                        </div>
+                        <div class="subject">
+                            Amazon-এ আপনার স্থানীয় এবং আন্তর্জাতিক অ্যাকাউন্ট সেট আপ করুন
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/generate_icon.svg" alt="Generate higher sales and return on investment">
+                        </div>
+                        <div class="subject">
+                            উচ্চতর বিক্রয় এবং বিনিয়োগের উপর রিটার্ন জেনারেট করুন
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="img">
+                            <img src="assets/images/course/tracking_icon.svg" alt="Traffic and sales reporting and tracking section">
+                        </div>
+                        <div class="subject">
+                            ট্র্যাফিক এবং বিক্রি রিপোর্টিং এবং ট্র্যাকিং বিভাগ
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center pt-[39px]">
+                    <button class="default-btn px-[26px] py-[17px] font-semibold hover:bg-[#F9901C] hover:text-white">কোর্সে জয়েন করুন</button>
+                </div>
+            </div>
+        </section>
+        <section class="mentors">
+            <div class="pt-[39px] pb-[28px] px-[19px] mt-[80px] md:mt-[130px] md:px-[75px] py-6 md:pt-[79px] md:pb-[78px] rounded-[20px] bg-[#F0F1F3] border-[#CCD3E5] border-2 text-center">
+                <h3 class="text-base md:text-2xl leading-[29.05px] font-bold text-[#002A93] mb-[5px] md:mb-[7px]">আমাদের টিম</h3>
+                <h2 class="text-xl md:text-4xl leading-7 md:leading-[43.57px] font-bold text-[#303950] mb-[9px] md:mb-[12px]">আমাদের দক্ষ মেন্টরগণ</h2>
+                <h4 class="text-[14px] md:text-xl leading-[24.2px] mb-[38px] md:mb-[53px] text-[#5A6174]">আমাদের নেতৃত্বের দলটি এমন শিল্প বিশেষজ্ঞদের নিয়ে গঠিত যারা তাদের কাজ এবং শিক্ষাদান সম্পর্কে উত্সাহী এবং আমাজন বিজনেস ও মনিটরিং এ তাদের রয়েছে ব্যাপক অভিজ্ঞতা।</h4>
+                <div class="md:grid md:grid-cols-3 md:gap-[22px] mb-[22px] text-center">
+                    <div class="mb-4 md:mb-0">
+                        <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
+                            <img class="m-auto h-full" src="assets/images/peoples/al-amin.png" alt="Al Amin">
+                        </div>
+                        <div class="person-item bg-white relative rounded-b-[14px]">
+                            <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
+                                আল আমিন সরকার
+                            </div>
+                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/Instagram_icon.svg" alt="person instagarm icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/email_icon.svg" alt="person email icon"></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="assets/images/peoples/linkedin_icon.svg" alt="person linkedin icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 md:mb-0">
+                        <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
+                            <img class="m-auto h-full" src="assets/images/peoples/raja.png" alt="Farhad Raja">
+                        </div>
+                        <div class="person-item bg-white relative rounded-b-[14px]">
+                            <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
+                                ফরহাদ রাজা
+                            </div>
+                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/Instagram_icon.svg" alt="person instagarm icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/email_icon.svg" alt="person email icon"></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="assets/images/peoples/linkedin_icon.svg" alt="person linkedin icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 md:mb-0">
+                        <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
+                            <img class="m-auto h-full" src="assets/images/peoples/imran.png" alt="Imran Sarkar">
+                        </div>
+                        <div class="person-item bg-white relative rounded-b-[14px]">
+                            <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
+                                ইমরান সরকার
+                            </div>
+                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/Instagram_icon.svg" alt="person instagarm icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/email_icon.svg" alt="person email icon"></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="assets/images/peoples/linkedin_icon.svg" alt="person linkedin icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:grid md:grid-cols-6 md:gap-[22px] text-center">
+                    <div class="col-start-2 col-end-4 mb-4 md:mb-0">
+                        <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
+                            <img class="m-auto h-full" src="assets/images/peoples/ashraful.svg" alt="Ashraful Islam Sohag">
+                        </div>
+                        <div class="person-item bg-white relative rounded-b-[14px]">
+                            <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
+                                আশরাফুল ইসলাম সোহাগ
+                            </div>
+                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/Instagram_icon.svg" alt="person instagarm icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/email_icon.svg" alt="person email icon"></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="assets/images/peoples/linkedin_icon.svg" alt="person linkedin icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-start-4 col-end-6 mb-4 md:mb-0">
+                        <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
+                            <img class="m-auto h-full" src="assets/images/peoples/nazmul.svg" alt="Nazmul Khandkar">
+                        </div>
+                        <div class="person-item bg-white relative rounded-b-[14px]">
+                            <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
+                                নাজমুল খন্দকার
+                            </div>
+                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/Instagram_icon.svg" alt="person instagarm icon"></a>
+                                </div>
+                                <div class="mr-[9.71px]">
+                                    <a href=""><img src="assets/images/peoples/email_icon.svg" alt="person email icon"></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="assets/images/peoples/linkedin_icon.svg" alt="person linkedin icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-[33.11px] md:pt-[32px] text-center">
+                    <button class="default-btn px-[50px] py-4 hover:bg-[#F9901C] font-semibold">আরো দেখুন</button>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="mt-6 md:mt-[120px] rounded-[20px] bg-[#0D1322] pb-[45px] px-3 pt-[56px] md:pt-[68px] md:pb-[72px] md:px-[75px] text-center">
+                <h3 class="text-base md:text-2xl leading-[29.05px] font-bold text-[#CBD3E8] mb-[7px] md:mb-[9px]">স্টুডেন্ট ফিডব্যাক</h3>
+                <h2 class="text-xl md:text-4xl leading-7 md:leading-[43.57px] font-bold text-[#D9E1F6] mb-[11x] md:mb-[10px]">কোর্স সম্পর্কে শিক্ষার্থীদের অভিমত</h2>
+                <h4 class="text-base md:text-xl leading-[24.2px] mb-[42px] md:mb-[72px] text-[#CBD3E8]">শিক্ষার্থীরা Seven Stars এর প্রতি তাদের ভালবাসা প্রকাশ করেছেন...</h4>
+                <div class="">
+                    <div id="feedback-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/atik.svg" alt="Feedback from Atik">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Atik Aslam</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামু আলাইকুম, আমার নাম আতিক আসলাম, আমি সেভেন স্টার গুরুপের একজন স্টুডেন্ট, আমি মুলত এমাজন বিজনেস করার জন্য কোর্সে ভর্তি হয়েছি, আলহামদুলিল্লাহ আমাদের সকল টিচার খুব সুন্দর ভাবে সব ক্লাস গুলো অনলাইনের মাধ্যমে করিয়ে থাকে এবং বুঝিয়ে থাকে, তারা সব সময় আমাদের কাজ ও বিজনেস রিলেটেড যতো সমস্যা আছে তা সুন্দর ভাবে সমাধান করে দেয়, লাইফ টাইম সাপোর্টের জন্য তারা আমাদের যে কমিটমেন্ট দিয়েছিলো আলহামদুলিল্লাহ আমরা তা পাচ্ছি, তাদের সহযোগিতার জন্যে আমরা সামনের দিকে এগিয়ে যেতে পারতেসি, অনেক ধন্যবাদ সেভেন স্টার গুরুপকে, আর টিচার দের জন্য মন থেকে অনেক ভালোবাসা ও দোয়া রইলো. লাভ ইউ সেভেন স্টার 🥰
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            I joined Seven Star Group last July. So far as a student I have learned a lot about Amazon business from the teachers. Their teaching method is very beautiful and lively. What I like most about them is Giving their education is not bound in any specific time. They are always by your side for any need to teach.
+                                            May the great creator give success to teachers and students always. And gave the opportunity to help each other's ❤️
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমি একজন দুবাই প্রবাসী | আমি ওনাদের কাছ থেকে অ্যামাজনের কোর্সটি করি কাজের পাশাপাশি বাড়তি কিছু ইনকাম করার জন্য | তাদের কোর্সটি সম্পন্ন করার পর তারা আমাকে আমার পুরো আমাজন সেলার একাউন্ট টি ঠিক করে দেয় | পরবর্তীতে আমি তাদের দেখানো মত প্রোডাক্ট লিস্টিং করি | আলহামদুলিল্লাহ আমি প্রায় দুই মাসে ১২০০ উপরে পণ্য বিক্রি করি| আমার এত অল্প সময়ে এত বিক্রি হবে এটা আমি কখনোই ভাবতে পারিনি এটা আমার জন্য ছিল একটি স্বপ্নের মত| এসবই সম্ভব হয়েছে তাদের তাদের পরিশ্রমের কারণে তাদেরকে অসংখ্য ধন্যবাদ আমাদের মত প্রবাসীদের কাজের পাশাপাশি ইনকাম করার সুযোগ করে দিয়ে | আশা করি তাদের কারণে আমরাও এবং তারাও সামনে অনেক এগিয়ে যাবে আল্লাহর রহমতে🥰🥰, তাদের জন্য রইল আমার মন থেকে শুভকামনা
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমার নাম হাবিব. আমি একজন সৌদি প্রবাসী, আমি সেভেন স্টার গ্রুপ থেকে তাদের কোর্সে জয়েন করি, তারা খুবই আন্তরিকতার সাথে আমাদের প্রস্তুতি করায় প্রথম থেকে শুরু পর্যন্ত, তারা আমাদের সাথে খুবই ফ্রেন্ডলি ভাবে ব্যবহার করে আমাদেরকে সব শিখিয়েছে, আমি ভাবতে পারি নাই যে আমি ওনাদের থেকে এত কিছু শিখতে পারবো | আমি আমার চাওয়া থেকে তাদের কাছ থেকে আমি অনেক কিছু পেয়েছি এটাতে আমি তাদেরকে ধন্যবাদ জানাই | তারা অতি ব্যস্ততার মাঝেও আমার সব প্রশ্নের উত্তর দিয়েছে এ কারণে আমি অনেক অনেক বেশি খুশি
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            I joined Seven Star Group last July. So far as a student I have learned a lot about Amazon business from the teachers. Their teaching method is very beautiful and lively. What I like most about them is Giving their education is not bound in any specific time. They are always by your side for any need to teach.
+                                            May the great creator give success to teachers and students always. And gave the opportunity to help each other's ❤️
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমি একজন দুবাই প্রবাসী | আমি ওনাদের কাছ থেকে অ্যামাজনের কোর্সটি করি কাজের পাশাপাশি বাড়তি কিছু ইনকাম করার জন্য | তাদের কোর্সটি সম্পন্ন করার পর তারা আমাকে আমার পুরো আমাজন সেলার একাউন্ট টি ঠিক করে দেয় | পরবর্তীতে আমি তাদের দেখানো মত প্রোডাক্ট লিস্টিং করি | আলহামদুলিল্লাহ আমি প্রায় দুই মাসে ১২০০ উপরে পণ্য বিক্রি করি| আমার এত অল্প সময়ে এত বিক্রি হবে এটা আমি কখনোই ভাবতে পারিনি এটা আমার জন্য ছিল একটি স্বপ্নের মত| এসবই সম্ভব হয়েছে তাদের তাদের পরিশ্রমের কারণে তাদেরকে অসংখ্য ধন্যবাদ আমাদের মত প্রবাসীদের কাজের পাশাপাশি ইনকাম করার সুযোগ করে দিয়ে | আশা করি তাদের কারণে আমরাও এবং তারাও সামনে অনেক এগিয়ে যাবে আল্লাহর রহমতে🥰🥰, তাদের জন্য রইল আমার মন থেকে শুভকামনা
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমার নাম হাবিব. আমি একজন সৌদি প্রবাসী, আমি সেভেন স্টার গ্রুপ থেকে তাদের কোর্সে জয়েন করি, তারা খুবই আন্তরিকতার সাথে আমাদের প্রস্তুতি করায় প্রথম থেকে শুরু পর্যন্ত, তারা আমাদের সাথে খুবই ফ্রেন্ডলি ভাবে ব্যবহার করে আমাদেরকে সব শিখিয়েছে, আমি ভাবতে পারি নাই যে আমি ওনাদের থেকে এত কিছু শিখতে পারবো | আমি আমার চাওয়া থেকে তাদের কাছ থেকে আমি অনেক কিছু পেয়েছি এটাতে আমি তাদেরকে ধন্যবাদ জানাই | তারা অতি ব্যস্ততার মাঝেও আমার সব প্রশ্নের উত্তর দিয়েছে এ কারণে আমি অনেক অনেক বেশি খুশি
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            I joined Seven Star Group last July. So far as a student I have learned a lot about Amazon business from the teachers. Their teaching method is very beautiful and lively. What I like most about them is Giving their education is not bound in any specific time. They are always by your side for any need to teach.
+                                            May the great creator give success to teachers and students always. And gave the opportunity to help each other's ❤️
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমি একজন দুবাই প্রবাসী | আমি ওনাদের কাছ থেকে অ্যামাজনের কোর্সটি করি কাজের পাশাপাশি বাড়তি কিছু ইনকাম করার জন্য | তাদের কোর্সটি সম্পন্ন করার পর তারা আমাকে আমার পুরো আমাজন সেলার একাউন্ট টি ঠিক করে দেয় | পরবর্তীতে আমি তাদের দেখানো মত প্রোডাক্ট লিস্টিং করি | আলহামদুলিল্লাহ আমি প্রায় দুই মাসে ১২০০ উপরে পণ্য বিক্রি করি| আমার এত অল্প সময়ে এত বিক্রি হবে এটা আমি কখনোই ভাবতে পারিনি এটা আমার জন্য ছিল একটি স্বপ্নের মত| এসবই সম্ভব হয়েছে তাদের তাদের পরিশ্রমের কারণে তাদেরকে অসংখ্য ধন্যবাদ আমাদের মত প্রবাসীদের কাজের পাশাপাশি ইনকাম করার সুযোগ করে দিয়ে | আশা করি তাদের কারণে আমরাও এবং তারাও সামনে অনেক এগিয়ে যাবে আল্লাহর রহমতে🥰🥰, তাদের জন্য রইল আমার মন থেকে শুভকামনা
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমার নাম হাবিব. আমি একজন সৌদি প্রবাসী, আমি সেভেন স্টার গ্রুপ থেকে তাদের কোর্সে জয়েন করি, তারা খুবই আন্তরিকতার সাথে আমাদের প্রস্তুতি করায় প্রথম থেকে শুরু পর্যন্ত, তারা আমাদের সাথে খুবই ফ্রেন্ডলি ভাবে ব্যবহার করে আমাদেরকে সব শিখিয়েছে, আমি ভাবতে পারি নাই যে আমি ওনাদের থেকে এত কিছু শিখতে পারবো | আমি আমার চাওয়া থেকে তাদের কাছ থেকে আমি অনেক কিছু পেয়েছি এটাতে আমি তাদেরকে ধন্যবাদ জানাই | তারা অতি ব্যস্ততার মাঝেও আমার সব প্রশ্নের উত্তর দিয়েছে এ কারণে আমি অনেক অনেক বেশি খুশি
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            I joined Seven Star Group last July. So far as a student I have learned a lot about Amazon business from the teachers. Their teaching method is very beautiful and lively. What I like most about them is Giving their education is not bound in any specific time. They are always by your side for any need to teach.
+                                            May the great creator give success to teachers and students always. And gave the opportunity to help each other's ❤️
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমি একজন দুবাই প্রবাসী | আমি ওনাদের কাছ থেকে অ্যামাজনের কোর্সটি করি কাজের পাশাপাশি বাড়তি কিছু ইনকাম করার জন্য | তাদের কোর্সটি সম্পন্ন করার পর তারা আমাকে আমার পুরো আমাজন সেলার একাউন্ট টি ঠিক করে দেয় | পরবর্তীতে আমি তাদের দেখানো মত প্রোডাক্ট লিস্টিং করি | আলহামদুলিল্লাহ আমি প্রায় দুই মাসে ১২০০ উপরে পণ্য বিক্রি করি| আমার এত অল্প সময়ে এত বিক্রি হবে এটা আমি কখনোই ভাবতে পারিনি এটা আমার জন্য ছিল একটি স্বপ্নের মত| এসবই সম্ভব হয়েছে তাদের তাদের পরিশ্রমের কারণে তাদেরকে অসংখ্য ধন্যবাদ আমাদের মত প্রবাসীদের কাজের পাশাপাশি ইনকাম করার সুযোগ করে দিয়ে | আশা করি তাদের কারণে আমরাও এবং তারাও সামনে অনেক এগিয়ে যাবে আল্লাহর রহমতে🥰🥰, তাদের জন্য রইল আমার মন থেকে শুভকামনা
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমার নাম হাবিব. আমি একজন সৌদি প্রবাসী, আমি সেভেন স্টার গ্রুপ থেকে তাদের কোর্সে জয়েন করি, তারা খুবই আন্তরিকতার সাথে আমাদের প্রস্তুতি করায় প্রথম থেকে শুরু পর্যন্ত, তারা আমাদের সাথে খুবই ফ্রেন্ডলি ভাবে ব্যবহার করে আমাদেরকে সব শিখিয়েছে, আমি ভাবতে পারি নাই যে আমি ওনাদের থেকে এত কিছু শিখতে পারবো | আমি আমার চাওয়া থেকে তাদের কাছ থেকে আমি অনেক কিছু পেয়েছি এটাতে আমি তাদেরকে ধন্যবাদ জানাই | তারা অতি ব্যস্ততার মাঝেও আমার সব প্রশ্নের উত্তর দিয়েছে এ কারণে আমি অনেক অনেক বেশি খুশি
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            I joined Seven Star Group last July. So far as a student I have learned a lot about Amazon business from the teachers. Their teaching method is very beautiful and lively. What I like most about them is Giving their education is not bound in any specific time. They are always by your side for any need to teach.
+                                            May the great creator give success to teachers and students always. And gave the opportunity to help each other's ❤️
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমি একজন দুবাই প্রবাসী | আমি ওনাদের কাছ থেকে অ্যামাজনের কোর্সটি করি কাজের পাশাপাশি বাড়তি কিছু ইনকাম করার জন্য | তাদের কোর্সটি সম্পন্ন করার পর তারা আমাকে আমার পুরো আমাজন সেলার একাউন্ট টি ঠিক করে দেয় | পরবর্তীতে আমি তাদের দেখানো মত প্রোডাক্ট লিস্টিং করি | আলহামদুলিল্লাহ আমি প্রায় দুই মাসে ১২০০ উপরে পণ্য বিক্রি করি| আমার এত অল্প সময়ে এত বিক্রি হবে এটা আমি কখনোই ভাবতে পারিনি এটা আমার জন্য ছিল একটি স্বপ্নের মত| এসবই সম্ভব হয়েছে তাদের তাদের পরিশ্রমের কারণে তাদেরকে অসংখ্য ধন্যবাদ আমাদের মত প্রবাসীদের কাজের পাশাপাশি ইনকাম করার সুযোগ করে দিয়ে | আশা করি তাদের কারণে আমরাও এবং তারাও সামনে অনেক এগিয়ে যাবে আল্লাহর রহমতে🥰🥰, তাদের জন্য রইল আমার মন থেকে শুভকামনা
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
+                                        <div class="flex items-center mb-[21px]">
+                                            <div class="mr-[14px]">
+                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
+                                                <div class="flex">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                    <img src="assets/images/feedback/star.svg" alt="rate star icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-[14px] text-[#A6ADBD] leading-[16.94px] text-ellipsis overflow-hidden text-left h-[78%]">
+                                            আসসালামুয়ালাইকুম আমার নাম হাবিব. আমি একজন সৌদি প্রবাসী, আমি সেভেন স্টার গ্রুপ থেকে তাদের কোর্সে জয়েন করি, তারা খুবই আন্তরিকতার সাথে আমাদের প্রস্তুতি করায় প্রথম থেকে শুরু পর্যন্ত, তারা আমাদের সাথে খুবই ফ্রেন্ডলি ভাবে ব্যবহার করে আমাদেরকে সব শিখিয়েছে, আমি ভাবতে পারি নাই যে আমি ওনাদের থেকে এত কিছু শিখতে পারবো | আমি আমার চাওয়া থেকে তাদের কাছ থেকে আমি অনেক কিছু পেয়েছি এটাতে আমি তাদেরকে ধন্যবাদ জানাই | তারা অতি ব্যস্ততার মাঝেও আমার সব প্রশ্নের উত্তর দিয়েছে এ কারণে আমি অনেক অনেক বেশি খুশি
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>              
     </div>
-    <script
-        src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-        crossorigin="anonymous">
-    </script>
-    <script src="js/main.js"></script>
+    <footer>
+        <div class="notification px-4 md:px-0 font-inter">
+            <div class="mt-[67px] md:mt-[120px] max-w-[1040px] bg-[#002A93] rounded-xl pt-[25px] pb-[28px] px-4 md:pt-8 md:pb-[25px] mx-auto relative">
+                <div class="max-w-[728px] text-center text-[18px] md:text-[26px] leading-[26px] font-semibold mx-auto text-white mb-[19px]">
+                    সফল ক্যারিয়ার গড়তে সঠিক দিকনির্দেশনা পেতে ও কোর্স সম্পর্কিত যেকোনো তথ্যের জন্য যোগাযোগ করুন
+                </div>
+                <div class="text-center">
+                    <button class="bg-white text-base md:text-lg text-[#0D1322] w-[132px] h-[44px] md:w-[160px] md:h-[48px] leading-[26px] font-semibold hover:bg-[#F9901C] hover:text-white rounded-full mr-2 md:mr-5">
+                        কল করুন
+                    </button>
+                    <button class="bg-white text-base md:text-lg text-[#0D1322] w-[132px] h-[44px] md:w-[160px] md:h-[48px] leading-[26px] font-semibold hover:bg-[#F9901C] hover:text-white rounded-full">
+                        মেসেজ করুন
+                    </button>
+                </div>
+            </div>
+        </div>  
+        <div class="bg-[#0D1322] -mt-[50px] md:-mt-[80px] font-inter">
+            <div class="container md:pt-[115px] px-4 md:px-0 ">
+                <div class="md:grid md:grid-cols-3 mb-[28px] md:mb-[46px]">
+                    <div class="hidden md:block">
+                        <div class="md:mb-[23px]">
+                            <img class="w-[140px] h-[40px]" src="assets/images/footer/logo.svg" alt="Seven Stars Logo">
+                        </div>
+                        <div class="text-[14px] leading-[20px] text-[#D7DDEE]">
+                            যেকোনো বয়সের শিক্ষার্থী, প্রফেশনাল ও নন-প্রফেশনালদের জন্য Seven Stars হলো দেশের সেরা Amazon Business স্কিল ডেভেলপমেন্ট সলিউশন. Seven Stars ইন্ডাস্ট্রির এক্সপার্টদের সাথে লাইফ টাইম সাপোর্টে ক্যারিয়ার প্রোগ্রাম ও ফাউন্ডেশন কোর্সগুলো দেশে-বিদেশে আমাজন বিজনেস আপনার সফল ক্যারিয়ার নিশ্চিত করবে, ইনশাআল্লাহ.<br><br>
+                            আমাদের Amazon FBM ও FBA অনলাইন কোর্সের ভর্তির কার্যক্রম শুরু আগামী ১৫ সেপ্টেম্বর ২০২৩ইং থেকে... 
+                        </div>
+                    </div>
+                    <div class="footer-link pt-[149px] mb-[34px] md:mb-0 md:mt-0 md:pt-[26px] md:pl-[40%]">
+                        <a class="active" href="">নেভিগেশন</a>
+                        <a href="">হোম</a>
+                        <a href="">কোর্সের বিস্তারিত</a>
+                        <a href="">স্টুডেন্ট ফিডব্যাক</a>
+                        <a href="">আমাদের টিম</a>
+                        <a href="">কোর্স এনরোল করুন </a>
+                    </div>
+                    <div class="pt-[26px] md:pl-[25%]">
+                        <p class="text-base leading-[19.36px] text-[#F9901C] mb-[15px] md:mb-3 font-semibold">যোগাযোগের মাধ্যম</p>
+                        <div class="mb-[34px] md:mb-[35px]">
+                            <div class="mb-[7px] md:mb-[6px]">
+                                <a class="flex items-center" href="tel:966 53 546 9321">
+                                    <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[6px]">
+                                        <img src="assets/images/footer/phone.svg" />
+                                    </span>
+                                    <span class="font-medium text-base leading-[19.6px] text-white">+966 53 546 9321</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="flex items-center" href="mailto:support@sevenstarsbd.com">
+                                    <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[6px]">
+                                        <img src="assets/images/footer/email.svg">
+                                    </span>
+                                    <span class="font-medium text-base leading-[19.6px] text-white">support@sevenstarsbd.com</span>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-base leading-[19.36px] text-[#F9901C] mb-[34px] md:mb-[15px] font-semibold">সোশাল মিডিয়া লিঙ্ক</p>
+                        <div class="flex">
+                            <a href="">
+                                <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[9px]"><img src="assets/images/footer/facebook.svg"></span>
+                            </a>
+                            <a href="">
+                                <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[9px]"><img src="assets/images/footer/instagram.svg"></span>
+                            </a>
+                            <a href="">
+                                <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[9px]"><img src="assets/images/footer/linkedin.svg"></span>
+                            </a>
+                            <a href="">
+                                <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[9px]"><img src="assets/images/footer/twitter.svg"></span>
+                            </a>
+                            <a href="">
+                                <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[9px]"><img src="assets/images/footer/youtube.svg"></span>
+                            </a>
+                            <a href="">
+                                <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C]"><img src="assets/images/footer/tiktok.svg"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block md:hidden">
+                    <img class="w-[97.98px] h-[27.99px]" src="assets/images/footer/logo.svg" alt="Seven Stars Logo">
+                </div>
+            </div>
+            <div class="w-full bg-[#5A6174] h-px mt-[63px] md:mt-[46px]"></div>
+            <div class="container">
+                <div class="pt-[11px] pb-[14px] md:pt-[23px] md:pb-[21px] text-[#5A6174] text-[14px] leading-[20px] text-center relative">
+                    Copyright © 2023 Seven Stars Group
+                    <button class="flex items-center justify-center w-[91px] h-[28px] md:w-[156px] md:h-[48px] default-btn hover:bg-[#F9901C] fixed bottom-[17px] right-4 md:right-[calc(8%+10px)]">
+                        <span class="text-[9px] leading-[11.67px] md:text-base md:leading-[20px] font-semibold">লাইভ চ্যাট</span>
+                        <img class="ml-[6px] md:ml-3 w-[17.5px] h-[17.5px] md:w-[30px] md:h-[30px]" src="assets/images/footer/chat.svg" alt="Seven Stars Chat">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/splide.min.js"></script>
 </body>
 </html>

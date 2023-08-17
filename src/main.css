@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: "inter";
-}
 .container{
     max-width: 1196px;
     margin: auto;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
 }
 .dropdown-list{
     display: none;
@@ -20,4 +24,68 @@ body{
     border-radius: 9999px;
     font-size: 16px;
     color: #fff;
+}
+.service-item{
+    display: flex;
+    border: 2px solid rgba(0, 42, 147, 0.15);
+    border-radius: 9px;
+}
+.service-item .img{
+    width: 68px;
+    height: 72px;
+    background: #CCD3E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-start-start-radius: 6px;
+    border-end-start-radius: 6px;
+}
+.service-item .subject{
+    background: #F0F1F3;
+    color: #303950;
+    font-weight: 600;    
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24.2px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border-start-end-radius: 9px;
+    border-end-end-radius: 9px;
+}
+/** Slide **/
+.splide__pagination{
+    position: relative !important;
+    padding-top: 50px !important;
+}
+/** Footer link **/
+.footer-link a{
+    display: block;
+    font-size: 16px;
+    line-height: 19.36px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 18px;
+}
+.footer-link a:hover{
+    font-weight: 600;
+}
+.footer-link a.active{
+    color: #F9901C;
+}
+
+
+@media (max-width: 640px) { 
+    .service-item{
+        margin-bottom: 7px;
+    }
+    .service-item .subject{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .footer-link a{
+        margin-bottom: 15px;
+    }
 }
