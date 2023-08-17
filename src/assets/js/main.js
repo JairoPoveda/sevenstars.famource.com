@@ -1,8 +1,20 @@
 $(document).ready(function(){
 
+    var navFlag = false;
     // toggle menu in Mobile
     $('.navbtn').click(function(){
-        $('.dropdown-list').slideToggle(200, 'linear'); 
+        $('.toggleMenu').slideToggle();
+        console.log(navFlag);
+        
+        if (navFlag) {
+            $('.menu-open').css('display', 'block');
+            $('.menu-close').css('display', 'none');
+            navFlag = false;
+        } else {
+            $('.menu-open').css('display', 'none');
+            $('.menu-close').css('display', 'flex');
+            navFlag = true;
+        }
     });
 
     // Sticky
@@ -32,7 +44,8 @@ $(document).ready(function(){
 
     // Feedback Slider
     new Splide( '#feedback-slider', {
-        //type : 'loop',
+        autoplay: 'true',
+        type : 'loop',
         height : 'auto',
         cover : true,
         perPage : 3,

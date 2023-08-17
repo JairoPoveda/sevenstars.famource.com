@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="../dist/main.css" rel="stylesheet">    
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link href="assets/css/splide.min.css" rel="stylesheet">
 </head>
 <body>
@@ -83,32 +81,70 @@
                             বাং-ENG
                         </button>
                     </div>                    
-                    <button class="rounded navbtn">
-                        <span class="w-[22.17px] h-[2.65px] bg-[#002A93] block mb-1"></span>
-                        <span class="w-[22.17px] h-[2.65px] bg-[#002A93] mb-1 block"></span>
-                        <span class="w-[22.17px] h-[2.65px] bg-[#002A93] block"></span>
+                    <button class="navbtn">
+                        <div class="menu-open w-6">
+                            <span class="w-[22.17px] h-[2.65px] bg-[#002A93] block mb-1"></span>
+                            <span class="w-[22.17px] h-[2.65px] bg-[#002A93] mb-1 block"></span>
+                            <span class="w-[22.17px] h-[2.65px] bg-[#002A93] block"></span>
+                        </div>
+                        <div class="hidden menu-close w-6 h-6 border border-[#002A93] flex items-center justify-center rounded-[3px]">
+                            <img class="h-[10.75px]" src="assets/images/header/close_icon.svg" alt="close nav menu">
+                        </div>                        
                     </button>                    
                 </div>               
             </div>
         </div>
-        <div id="nav-menu font-inter">
-            <div class="flex">
-                <ul class="bg-[#002A93] w-full z-999 fixed top-12 text-white">
-                    <li class="dropdown-list md:hidden text-base p-3 border-b menu-active">
-                        <a href="">হোম</a>
-                    </li>
-                    <li class="dropdown-list text-base p-3 border-b">
-                        <a href="">কোর্সের বিস্তারিত</a>\
-                    </li>
-                    <li class="dropdown-list text-base p-3 border-b">
-                        <a href="">স্টুডেন্ট ফিডব্যাক</a>
-                    </li>
-                    <li class="dropdown-list text-base p-3">
-                        <a href="">আমাদের টিম</a>
-                    </li>
-                </ul>
-                <div>
-
+        <div id="nav-menu" class="font-inter">
+            <div class="toggleMenu hidden w-full z-999 fixed top-12 bg-white px-[22px] pt-10 pb-[38px]">
+                <div class="flex justify-between">
+                    <div>
+                        <ul class="text-[#303950]">
+                            <li class="text-base mb-3 leading-[19.36px] active">
+                                <a href="">হোম</a>
+                            </li>
+                            <li class="text-base mb-3 leading-[19.36px]">
+                                <a href="">কোর্সের বিস্তারিত</a>\
+                            </li>
+                            <li class="text-base mb-3 leading-[19.36px]">
+                                <a href="">স্টুডেন্ট ফিডব্যাক</a>
+                            </li>
+                            <li class="text-base mb-3 leading-[19.36px]">
+                                <a href="">আমাদের টিম</a>
+                            </li>
+                        </ul>
+                        <button class="block rounded-full bg-[#002a9312] w-[110px] h-[36px] mb-[16px] hover:bg-[#F9901C] hover:text-white">
+                            যোগাযোগ
+                        </button>
+                        <button class="block default-btn w-[110px] h-[36px] mb-[54px] hover:bg-[#F9901C]">
+                            যোগাযোগ
+                        </button>
+                        <div class="text-sm text-[#303950] leading-[16.94px]">
+                            আমাদের Amazon FBA ও FBM অনলাইন কোর্সের ভর্তির কার্যক্রম চলছে... 
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="block bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
+                            <img src="assets/images/header/tiktok.svg">
+                        </a>
+                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
+                            <img src="assets/images/header/whatsapp.svg">
+                        </a>
+                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
+                            <img src="assets/images/header/facebook.svg">
+                        </a>
+                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
+                            <img src="assets/images/header/instagram.svg">
+                        </a>
+                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
+                            <img src="assets/images/header/vector.svg">
+                        </a>
+                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
+                            <img src="assets/images/header/linkedin.svg">
+                        </a>
+                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
+                            <img src="assets/images/header/youtube.svg">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>        
@@ -126,7 +162,7 @@
                     <button class="default-btn text-base font-semibold py-3 px-6 md:py-[19px] md:px-[26px] hover:bg-[#F9901C] hover:text-white">কোর্সে জয়েন করুন</button>
                 </div>
                 <div>
-                    <img class="w-full" src="assets/images/service/hero_top.svg" alt="Hero top">
+                    <img class="w-full" src="assets/images/service/hero_top.png" alt="Hero top">
                 </div>
             </div>
         </section>
@@ -439,7 +475,7 @@
                 <div class="md:grid md:grid-cols-6 md:gap-[22px] text-center">
                     <div class="col-start-2 col-end-4 mb-4 md:mb-0">
                         <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
-                            <img class="m-auto h-full" src="assets/images/peoples/ashraful.svg" alt="Ashraful Islam Sohag">
+                            <img class="m-auto h-full" src="assets/images/peoples/ashraful.png" alt="Ashraful Islam Sohag">
                         </div>
                         <div class="person-item bg-white relative rounded-b-[14px]">
                             <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
@@ -463,7 +499,7 @@
                     </div>
                     <div class="col-start-4 col-end-6 mb-4 md:mb-0">
                         <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
-                            <img class="m-auto h-full" src="assets/images/peoples/nazmul.svg" alt="Nazmul Khandkar">
+                            <img class="m-auto h-full" src="assets/images/peoples/nazmul.png" alt="Nazmul Khandkar">
                         </div>
                         <div class="person-item bg-white relative rounded-b-[14px]">
                             <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
@@ -504,7 +540,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/atik.svg" alt="Feedback from Atik">
+                                                <img src="assets/images/feedback/atik.png" alt="Feedback from Atik">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Atik Aslam</div>
@@ -526,7 +562,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                                <img src="assets/images/feedback/ratan.png" alt="Feedback from Ratan">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
@@ -549,7 +585,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                                <img src="assets/images/feedback/saleh.png" alt="Feedback from Saleh">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
@@ -571,7 +607,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                                <img src="assets/images/feedback/mohammad.png" alt="Feedback from Mohammad">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
@@ -596,7 +632,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                                <img src="assets/images/feedback/ratan.png" alt="Feedback from Ratan">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
@@ -619,7 +655,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                                <img src="assets/images/feedback/saleh.png" alt="Feedback from Saleh">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
@@ -641,7 +677,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                                <img src="assets/images/feedback/mohammad.png" alt="Feedback from Mohammad">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
@@ -663,7 +699,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                                <img src="assets/images/feedback/ratan.png" alt="Feedback from Ratan">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
@@ -686,7 +722,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                                <img src="assets/images/feedback/saleh.png" alt="Feedback from Saleh">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
@@ -708,7 +744,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                                <img src="assets/images/feedback/mohammad.png" alt="Feedback from Mohammad">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
@@ -730,7 +766,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                                <img src="assets/images/feedback/ratan.png" alt="Feedback from Ratan">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
@@ -753,7 +789,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                                <img src="assets/images/feedback/saleh.png" alt="Feedback from Saleh">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
@@ -775,7 +811,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                                <img src="assets/images/feedback/mohammad.png" alt="Feedback from Mohammad">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
@@ -797,7 +833,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/ratan.svg" alt="Feedback from Ratan">
+                                                <img src="assets/images/feedback/ratan.png" alt="Feedback from Ratan">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Ratan Mahamud</div>
@@ -820,7 +856,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/saleh.svg" alt="Feedback from Saleh">
+                                                <img src="assets/images/feedback/saleh.png" alt="Feedback from Saleh">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Saleh Ahmed</div>
@@ -842,7 +878,7 @@
                                     <div class="p-[30px] rounded-[14px] bg-[#161F2F] h-[452px]">
                                         <div class="flex items-center mb-[21px]">
                                             <div class="mr-[14px]">
-                                                <img src="assets/images/feedback/mohammad.svg" alt="Feedback from Mohammad">
+                                                <img src="assets/images/feedback/mohammad.png" alt="Feedback from Mohammad">
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-[#CBD3E8] text-base leading-[19.36px] mb-[5px]">Mohammad Habib</div>
@@ -896,12 +932,12 @@
                         </div>
                     </div>
                     <div class="footer-link pt-[149px] mb-[34px] md:mb-0 md:mt-0 md:pt-[26px] md:pl-[40%]">
-                        <a class="active" href="">নেভিগেশন</a>
-                        <a href="">হোম</a>
-                        <a href="">কোর্সের বিস্তারিত</a>
-                        <a href="">স্টুডেন্ট ফিডব্যাক</a>
-                        <a href="">আমাদের টিম</a>
-                        <a href="">কোর্স এনরোল করুন </a>
+                        <a class="active text-sm md:text-base font-medium hover:font-semibold" href="">নেভিগেশন</a>
+                        <a class="text-sm md:text-base font-medium hover:font-semibold" href="">হোম</a>
+                        <a class="text-sm md:text-base font-medium hover:font-semibold" href="">কোর্সের বিস্তারিত</a>
+                        <a class="text-sm md:text-base font-medium hover:font-semibold" href="">স্টুডেন্ট ফিডব্যাক</a>
+                        <a class="text-sm md:text-base font-medium hover:font-semibold" href="">আমাদের টিম</a>
+                        <a class="text-sm md:text-base font-medium hover:font-semibold" href="">কোর্স এনরোল করুন </a>
                     </div>
                     <div class="pt-[26px] md:pl-[25%]">
                         <p class="text-base leading-[19.36px] text-[#F9901C] mb-[15px] md:mb-3 font-semibold">যোগাযোগের মাধ্যম</p>

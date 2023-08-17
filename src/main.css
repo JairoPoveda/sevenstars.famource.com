@@ -13,9 +13,6 @@
     background: #fff;
     z-index: 99999;
 }
-.dropdown-list{
-    display: none;
-}
 .active{
     color: #002A93;
 }

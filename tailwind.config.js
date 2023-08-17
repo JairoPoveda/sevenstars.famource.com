@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'inter': ['Inter']
+        'inter': ['Noto Sans Bengali']
       },
       boxShadow: {
         'menuShadow': '0px 4px 7px 0px rgba(183, 199, 230, 0.3)',
