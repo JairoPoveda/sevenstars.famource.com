@@ -24,7 +24,7 @@
 }
 header .tiktok{
     background: url('../src/assets/images/header/tiktok_icon.svg') no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%;    
 }
 header .tiktok:hover{
     background: url('../src/assets/images/header/tiktok_hover_icon.svg') no-repeat;
@@ -177,6 +177,9 @@ header .call:hover>.phone{
     display: flex;
     border: 2px solid rgba(0, 42, 147, 0.15);
     border-radius: 9px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
 }
 .service-item:hover{
     box-shadow: 4px 4px 15px -3px rgba(0, 42, 147, 0.15), 8px 8px 6px -4px rgb(255 255 255 / 10%);
@@ -230,14 +233,27 @@ header .call:hover>.phone{
     position: relative !important;
     padding-top: 50px !important;
 }
+/** Scroll Animation **/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+} 
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 /** Footer link **/
 .footer-link a{
     display: block;
-    font-size: 16px;
     line-height: 19.36px;
     font-weight: 500;
     color: #fff;
     margin-bottom: 18px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
 }
 .footer-link a:hover{
     font-weight: 600;

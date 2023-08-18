@@ -883,6 +883,10 @@ video {
   height: 34px;
 }
 
+.h-\[35px\] {
+  height: 35px;
+}
+
 .h-\[36px\] {
   height: 36px;
 }
@@ -913,10 +917,6 @@ video {
 
 .h-px {
   height: 1px;
-}
-
-.h-\[35px\] {
-  height: 35px;
 }
 
 .w-4 {
@@ -969,10 +969,6 @@ video {
 
 .w-\[80px\] {
   width: 80px;
-}
-
-.w-\[91px\] {
-  width: 91px;
 }
 
 .w-\[97\.98px\] {
@@ -1312,10 +1308,6 @@ video {
   font-size: 26px;
 }
 
-.text-\[9px\] {
-  font-size: 9px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1485,6 +1477,16 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .container{
@@ -1693,6 +1695,9 @@ header .call:hover>.phone{
   display: flex;
   border: 2px solid rgba(0, 42, 147, 0.15);
   border-radius: 9px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .service-item:hover{
@@ -1755,15 +1760,31 @@ header .call:hover>.phone{
   padding-top: 50px !important;
 }
 
+/** Scroll Animation **/
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /** Footer link **/
 
 .footer-link a{
   display: block;
-  font-size: 16px;
   line-height: 19.36px;
   font-weight: 500;
   color: #fff;
   margin-bottom: 18px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .footer-link a:hover{
@@ -1835,18 +1856,6 @@ header .call:hover>.phone{
 }
 
 @media (min-width: 768px) {
-  .md\:right-\[calc\(8\%\+10px\)\] {
-    right: calc(8% + 10px);
-  }
-
-  .md\:right-\[calc\(8\%\)\] {
-    right: calc(8%);
-  }
-
-  .md\:right-\[calc\(5\%\)\] {
-    right: calc(5%);
-  }
-
   .md\:right-\[calc\(3\%\)\] {
     right: calc(3%);
   }
