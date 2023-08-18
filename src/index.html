@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/main.css" rel="stylesheet">    
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="../dist/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Noto Sans Bengali" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="assets/fonts/stylesheet.css">-->
     <link href="assets/css/splide.min.css" rel="stylesheet">
 </head>
 <body>
@@ -15,29 +19,18 @@
                 <div>
                     <div class="flex justify-between pt-2 md:pt-0">
                         <div class="flex items-center">
-                            <a href="">
-                                <img src="assets/images/header/tiktok_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Tiktok">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/header/whatsapp_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Whatsapp">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/header/facebook_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Facebook">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/header/instagram_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Instagram">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/header/vector_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Vector">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/header/youtube_icon.svg" class="mx-3 md:mx-1 w-4 h-4" alt="Social Youtube">
-                            </a>
+                            <a href="" class="tiktok mx-3 md:mx-1 w-4 h-4"></a>
+                            <a href="" class="whatsapp mx-3 md:mx-1 w-4 h-4"></a>
+                            <a href="" class="facebook mx-3 md:mx-1 w-4 h-4"></a>
+                            <a href="" class="instagram mx-3 md:mx-1 w-4 h-4"></a>
+                            <a href="" class="vector mx-3 md:mx-1 w-4 h-4"></a>
+                            <a href="" class="linkedin mx-3 md:mx-1 w-4 h-4"></a>
+                            <a href="" class="youtube mx-3 md:mx-1 w-4 h-4"></a>
                         </div>
                         <div class="h-8 w-px mx-2 bg-[#566EA9]"></div>
                         <div class="flex items-center">
-                            <a href="tel:966 53 546 9321" class="flex text-white items-center">
-                                <img src="assets/images/header/phone_icon.svg" class="w-6 h-5" alt="call">
+                            <a href="tel:966 53 546 9321" class="call flex text-white items-center hover:text-[#F9901C]">
+                                <span class="phone w-6 h-5"></span>
                                 <span class="hidden md:block">+966 53 546 9321</span>
                             </a>
                         </div>
@@ -52,7 +45,7 @@
             <div class="container px-4 md:px-0 md:py-[27px] flex justify-between items-center">
                 <div>
                     <a href="#">
-                        <img class="w-[84px] md:w-auto" src="../src/assets/images/header/logo.svg" alt="logo">
+                        <img class="w-[100px] md:w-auto" src="../src/assets/images/header/logo.svg" alt="logo">
                     </a>
                 </div>
                 <div class="hidden md:block">
@@ -87,7 +80,7 @@
                             <span class="w-[22.17px] h-[2.65px] bg-[#002A93] mb-1 block"></span>
                             <span class="w-[22.17px] h-[2.65px] bg-[#002A93] block"></span>
                         </div>
-                        <div class="hidden menu-close w-6 h-6 border border-[#002A93] flex items-center justify-center rounded-[3px]">
+                        <div class="hidden menu-close w-6 h-6 border border-[#002A93] hover:border-[#F9901C] flex items-center justify-center rounded-[3px]">
                             <img class="h-[10.75px]" src="assets/images/header/close_icon.svg" alt="close nav menu">
                         </div>                        
                     </button>                    
@@ -95,7 +88,7 @@
             </div>
         </div>
         <div id="nav-menu" class="font-inter">
-            <div class="toggleMenu hidden w-full z-999 fixed top-12 bg-white px-[22px] pt-10 pb-[38px]">
+            <div class="toggleMenu hidden w-full z-[99999] fixed top-12 bg-white px-[22px] pt-10 pb-[38px]">
                 <div class="flex justify-between">
                     <div>
                         <ul class="text-[#303950]">
@@ -123,26 +116,19 @@
                         </div>
                     </div>
                     <div>
-                        <a href="" class="block bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
-                            <img src="assets/images/header/tiktok.svg">
+                        <a href="" class="nav-tiktok rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">                            
                         </a>
-                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
-                            <img src="assets/images/header/whatsapp.svg">
+                        <a href="" class="nav-whatsapp bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
                         </a>
-                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
-                            <img src="assets/images/header/facebook.svg">
+                        <a href="" class="nav-facebook bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">                            
                         </a>
-                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
-                            <img src="assets/images/header/instagram.svg">
+                        <a href="" class="nav-instagram bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">                            
                         </a>
-                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
-                            <img src="assets/images/header/vector.svg">
+                        <a href="" class="nav-vector bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
                         </a>
-                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
-                            <img src="assets/images/header/linkedin.svg">
+                        <a href="" class="nav-linkedin bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
                         </a>
-                        <a href="" class="bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
-                            <img src="assets/images/header/youtube.svg">
+                        <a href="" class="nav-youtube bg-[#EDF0F7] rounded-[5px] w-[28px] h-[28px] flex justify-center items-center mb-[5px]">
                         </a>
                     </div>
                 </div>
@@ -175,42 +161,42 @@
                     আমাদের ব্যাপক কোর্সের মাধ্যমে আপনার Amazon উপার্জনের সম্ভাবনা আনলক করুন. সর্বাধিক লাভ এবং প্রতিযোগিতামূলক বাজারে সফল হতে সর্বোত্তম পণ্য বিক্রির কৌশলগুলি শিখুন. আজ আর্থিক স্বাধীনতা আপনার যাত্রা শুরু!
                 </h3>
                 <div class="md:grid md:grid-cols-3 gap-[22px]">
-                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full hover:shadow-service">
                         <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_live.svg" alt="Live Class">
                         <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইভ ক্লাস</span>
                         <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
                             আমাদের প্রতিটি ক্লাস সরাসরি গুগল মিটে লাইভ হয়ে থাকে. আপনি সাচ্ছন্দ্য ভাবে সম্পন্ন কোর্সটি করতে পারবেন আমাদের সাথে.
                         </p>
                     </div>
-                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full hover:shadow-service">
                         <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_record.svg" alt="Record Class">
                         <span class="text-xl md:text-2xl text-white block mb-[18px]">রেকর্ড ক্লাস</span>
                         <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
                             আমাদের প্রতিটি লাইভ ক্লাসগুলো রেকর্ড করে আমাদের স্টুডেন্টদেরকে প্রদান করে থাকি.। যেন তারা প্রাক্টিস করার সময় রেকর্ড ক্লাসের সহযোগিতা নিতে পারে.
                         </p>
                     </div>
-                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full hover:shadow-service">
                         <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_ontime.svg" alt="Ontime Class">
                         <span class="text-xl md:text-2xl text-white block mb-[18px]">২৪/৭ অনটাইম রিপ্লাই</span>
                         <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
                             কোর্স চলাকালীন যেকোনো সমস্যার যেকোনো সমস্যায় আমাদেরকে প্রতিদিন যেকোনো সময়ে আপনার পাশে পাবেন.
                         </p>
                     </div>
-                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full hover:shadow-service">
                         <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_guideline.svg" alt="Guide Line">
                         <span class="text-xl md:text-2xl text-white block mb-[18px]">সঠিক গাইডলাইন</span>
                         <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
                             একদম কিছু না জানলেও আমরা শুরু থেকে শেষ অব্ধি যথাযথ গাইডলাইন দিয়ে থাকি। আমাদের গাইডলাইন অনুযায়ী আপনার প্রচেষ্টা সহজ হবে.
                         </p>
                     </div>
-                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full hover:shadow-service">
                         <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_students.svg" alt="Student Community">
                         <span class="text-xl md:text-2xl text-white block mb-[18px]">এক্সপার্ট স্টুডেন্ট কমিউনিটি</span>
                         <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
                             আমাদের স্টুডেন্টদেরকে আমাদের এক্সপার্ট স্টুডেন্ট কমিউনিটিতে যুক্ত করে দেই. শেখা বা কাজ করা কালীন আপনারা এই কমিউনিটি থেকে সহযোগিতা পাবেন.
                         </p>
                     </div>
-                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full">
+                    <div class="p-5 mb-5 md:pt-12 md:pb-10 md:px-6 rounded-[14px] bg-[#161F2F] text-center w-full hover:shadow-service">
                         <img class="mb-4 md:mb-6 mx-auto block" src="assets/images/service/service_lifetime.svg" alt="Life Time">
                         <span class="text-xl md:text-2xl text-white block mb-[18px]">লাইফটাইম সাপোর্ট</span>
                         <p class="text-sm md:text-base text-[#8F99B2] font-medium leading-5">
@@ -224,13 +210,13 @@
             <div class="mt-[81px] md:mt-[130px] text-center">
                 <h3 class="text-xl md:text-2xl leading-[29.05px] font-bold text-[#002A93] mb-2.5">কোর্সের বিস্তারিত</h3>
                 <h2 class="text-2xl md:text-4xl leading-7 md:leading-[43.57px] font-bold text-[#303950] mb-8 md:mb-[46px]">আমাদের কোর্সে যে যে মডিউল থাকছে</h2>
-                <div class="md:grid md:grid-cols-2 md:gap-4 service">
+                <div class="md:grid md:grid-cols-2 md:gap-4">
                     <div class="service-item">
                         <div class="img">
                             <img src="assets/images/course/amazon_account_icon.svg" alt="Amazon Account Icon">
                         </div>
                         <div class="subject">
-                            আমাজন সেলার একাউন্ট ক্রিয়েশন
+                            <span class="text-left">আমাজন সেলার একাউন্ট ক্রিয়েশন</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -238,7 +224,7 @@
                             <img src="assets/images/course/brand_icon.svg" alt="Brand Icon">
                         </div>
                         <div class="subject">
-                            হোলসেল এবং ব্রান্ড অনুমোদন
+                            <span class="text-left">হোলসেল এবং ব্রান্ড অনুমোদন</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -246,7 +232,7 @@
                             <img src="assets/images/course/product_research_icon.svg" alt="Product Research Icon">
                         </div>
                         <div class="subject">
-                            প্রোডাক্ট রিসার্চ
+                            <span class="text-left">প্রোডাক্ট রিসার্চ</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -254,7 +240,7 @@
                             <img src="assets/images/course/FBA_icon.svg" alt="Listing Creation FBA and FBM programs">
                         </div>
                         <div class="subject">
-                            লিষ্টিং ক্রিয়েশন FBA এবং FBM প্রোগ্রাম
+                            <span class="text-left">লিষ্টিং ক্রিয়েশন FBA এবং FBM প্রোগ্রাম</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -262,7 +248,7 @@
                             <img src="assets/images/course/optimize_icon.svg" alt="Product Optimize Icon">
                         </div>
                         <div class="subject">
-                            প্রোডাক্টস অপটিমাইজেশন এবং কনভারসেশন ট্রিকস
+                            <span class="text-left">প্রোডাক্টস অপটিমাইজেশন এবং কনভারসেশন ট্রিকস</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -270,7 +256,7 @@
                             <img src="assets/images/course/ATS_icon.svg" alt="How to Create an ATS Service">
                         </div>
                         <div class="subject">
-                            কিভাবে ATS পরিষেবা তৈরি করবেন
+                            <span class="text-left">কিভাবে ATS পরিষেবা তৈরি করবেন</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -278,7 +264,7 @@
                             <img src="assets/images/course/product_list_icon.svg" alt="Product List Icon">
                         </div>
                         <div class="subject">
-                            পণ্য তালিকা
+                            <span class="text-left">পণ্য তালিকা</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -286,7 +272,7 @@
                             <img src="assets/images/course/shipping_icon.svg" alt="Shipping">
                         </div>
                         <div class="subject">
-                            Esy শিপ
+                            <span class="text-left">Esy শিপ</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -294,7 +280,7 @@
                             <img src="assets/images/course/product_manage_icon.svg" alt="Product Management Icon">
                         </div>
                         <div class="subject">
-                            প্রোডাক্ট ম্যানেজমেন্ট
+                            <span class="text-left">প্রোডাক্ট ম্যানেজমেন্ট</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -302,15 +288,15 @@
                             <img src="assets/images/course/keyword_icon.svg" alt="Keyword ranking in Amazon search results">
                         </div>
                         <div class="subject">
-                            কি-ওয়ার্ড র‍্যাংকিং আমাজন সার্চ রেজাল্ট
+                            <span class="text-left">কি-ওয়ার্ড র‍্যাংকিং আমাজন সার্চ রেজাল্ট</span>
                         </div>
                     </div>
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/images/course/product_list_icon.svg" alt="PPC Campaign Icon">
+                            <img src="assets/images/course/ppc_campaign_icon.svg" alt="PPC Campaign Icon">
                         </div>
                         <div class="subject">
-                            PPC ক্যাম্পেইন
+                            <span class="text-left">PPC ক্যাম্পেইন</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -318,7 +304,7 @@
                             <img src="assets/images/course/multiple_write_icon.svg" alt="Multiple Write Products">
                         </div>
                         <div class="subject">
-                            পণ্যের শিরোনাম এবং পণ্যের বিবরণ লেখার একাধিক উপায়
+                            <span class="text-left">পণ্যের শিরোনাম এবং পণ্যের বিবরণ লেখার একাধিক উপায়</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -326,7 +312,7 @@
                             <img src="assets/images/course/how_list_icon.svg" alt="How to List Products Icon">
                         </div>
                         <div class="subject">
-                            কিভাবে একক পণ্য এবং বহু-ভেরিয়েন্ট পণ্য তালিকাভুক্ত করা যায়
+                            <span class="text-left">কিভাবে একক পণ্য এবং বহু-ভেরিয়েন্ট পণ্য তালিকাভুক্ত করা যায়</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -334,7 +320,7 @@
                             <img src="assets/images/course/supplier_research_icon.svg" alt="Supplier Research Icon">
                         </div>
                         <div class="subject">
-                            সাপ্লাইয়ার রিসার্চ
+                            <span class="text-left">সাপ্লাইয়ার রিসার্চ</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -342,7 +328,7 @@
                             <img src="assets/images/course/shipping_manage_icon.svg" alt="Shipping Management Icon">
                         </div>
                         <div class="subject">
-                            শিপিং ম্যানেজমেন্ট
+                            <span class="text-left">শিপিং ম্যানেজমেন্ট</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -350,7 +336,7 @@
                             <img src="assets/images/course/webstore_icon.svg" alt="Web store and order management">
                         </div>
                         <div class="subject">
-                            ওয়েব স্টোর এবং অর্ডার ব্যবস্থাপনা
+                            <span class="text-left">ওয়েব স্টোর এবং অর্ডার ব্যবস্থাপনা</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -358,7 +344,7 @@
                             <img src="assets/images/course/amazon_review_icon.svg" alt="Amazon Health, reviews, feedback and ratings Icon">
                         </div>
                         <div class="subject">
-                            Amazon Health, রিভিউ, ফিডব্যাক এবং রেটিং
+                            <span class="text-left">Amazon Health, রিভিউ, ফিডব্যাক এবং রেটিং</span>
                         </div>
                     </div>
 
@@ -367,7 +353,7 @@
                             <img src="assets/images/course/account_setup_icon.svg" alt="Local and International Amazon account Setup">
                         </div>
                         <div class="subject">
-                            Amazon-এ আপনার স্থানীয় এবং আন্তর্জাতিক অ্যাকাউন্ট সেট আপ করুন
+                            <span class="text-left">Amazon-এ আপনার স্থানীয় এবং আন্তর্জাতিক অ্যাকাউন্ট সেট আপ করুন</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -375,7 +361,7 @@
                             <img src="assets/images/course/generate_icon.svg" alt="Generate higher sales and return on investment">
                         </div>
                         <div class="subject">
-                            উচ্চতর বিক্রয় এবং বিনিয়োগের উপর রিটার্ন জেনারেট করুন
+                            <span class="text-left">উচ্চতর বিক্রয় এবং বিনিয়োগের উপর রিটার্ন জেনারেট করুন</span>
                         </div>
                     </div>
                     <div class="service-item">
@@ -383,7 +369,7 @@
                             <img src="assets/images/course/tracking_icon.svg" alt="Traffic and sales reporting and tracking section">
                         </div>
                         <div class="subject">
-                            ট্র্যাফিক এবং বিক্রি রিপোর্টিং এবং ট্র্যাকিং বিভাগ
+                            <span class="text-left">ট্র্যাফিক এবং বিক্রি রিপোর্টিং এবং ট্র্যাকিং বিভাগ</span>
                         </div>
                     </div>
 
@@ -399,15 +385,15 @@
                 <h2 class="text-xl md:text-4xl leading-7 md:leading-[43.57px] font-bold text-[#303950] mb-[9px] md:mb-[12px]">আমাদের দক্ষ মেন্টরগণ</h2>
                 <h4 class="text-[14px] md:text-xl leading-[24.2px] mb-[38px] md:mb-[53px] text-[#5A6174]">আমাদের নেতৃত্বের দলটি এমন শিল্প বিশেষজ্ঞদের নিয়ে গঠিত যারা তাদের কাজ এবং শিক্ষাদান সম্পর্কে উত্সাহী এবং আমাজন বিজনেস ও মনিটরিং এ তাদের রয়েছে ব্যাপক অভিজ্ঞতা।</h4>
                 <div class="md:grid md:grid-cols-3 md:gap-[22px] mb-[22px] text-center">
-                    <div class="mb-4 md:mb-0">
+                    <div class="person-item mb-4 md:mb-0 hover:shadow-card rounded-[14px]">
                         <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
                             <img class="m-auto h-full" src="assets/images/peoples/al-amin.png" alt="Al Amin">
                         </div>
-                        <div class="person-item bg-white relative rounded-b-[14px]">
+                        <div class="bg-white relative rounded-b-[14px]">
                             <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
                                 আল আমিন সরকার
                             </div>
-                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                            <div class="social-icons">
                                 <div class="mr-[9.71px]">
                                     <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
                                 </div>
@@ -423,15 +409,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-4 md:mb-0">
+                    <div class="person-item mb-4 md:mb-0 hover:shadow-card rounded-[14px]">
                         <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
                             <img class="m-auto h-full" src="assets/images/peoples/raja.png" alt="Farhad Raja">
                         </div>
-                        <div class="person-item bg-white relative rounded-b-[14px]">
+                        <div class="bg-white relative rounded-b-[14px]">
                             <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
                                 ফরহাদ রাজা
                             </div>
-                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                            <div class="social-icons">
                                 <div class="mr-[9.71px]">
                                     <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
                                 </div>
@@ -447,15 +433,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-4 md:mb-0">
+                    <div class="person-item mb-4 md:mb-0 hover:shadow-card rounded-[14px]">
                         <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
                             <img class="m-auto h-full" src="assets/images/peoples/imran.png" alt="Imran Sarkar">
                         </div>
-                        <div class="person-item bg-white relative rounded-b-[14px]">
+                        <div class="bg-white relative rounded-b-[14px]">
                             <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
                                 ইমরান সরকার
                             </div>
-                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                            <div class="social-icons">
                                 <div class="mr-[9.71px]">
                                     <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
                                 </div>
@@ -473,15 +459,15 @@
                     </div>
                 </div>
                 <div class="md:grid md:grid-cols-6 md:gap-[22px] text-center">
-                    <div class="col-start-2 col-end-4 mb-4 md:mb-0">
+                    <div class="person-item col-start-2 col-end-4 mb-4 md:mb-0 hover:shadow-card rounded-[14px]">
                         <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
                             <img class="m-auto h-full" src="assets/images/peoples/ashraful.png" alt="Ashraful Islam Sohag">
                         </div>
-                        <div class="person-item bg-white relative rounded-b-[14px]">
+                        <div class="bg-white relative rounded-b-[14px]">
                             <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
                                 আশরাফুল ইসলাম সোহাগ
                             </div>
-                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                            <div class="social-icons">
                                 <div class="mr-[9.71px]">
                                     <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
                                 </div>
@@ -497,15 +483,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-start-4 col-end-6 mb-4 md:mb-0">
+                    <div class="person-item col-start-4 col-end-6 mb-4 md:mb-0 hover:shadow-card rounded-[14px]">
                         <div class="bg-white text-center rounded-t-[14px] h-[258px] px-[5px]">
                             <img class="m-auto h-full" src="assets/images/peoples/nazmul.png" alt="Nazmul Khandkar">
                         </div>
-                        <div class="person-item bg-white relative rounded-b-[14px]">
+                        <div class="bg-white relative rounded-b-[14px]">
                             <div class="person-name text-xl text-[#002A93] leading-[24.2px] rounded-b-[14px] h-[54px] leading-[54px] font-bold bg-white">
                                 নাজমুল খন্দকার
                             </div>
-                            <div class="social-icons hidden justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px]">
+                            <div class="social-icons">
                                 <div class="mr-[9.71px]">
                                     <a href=""><img src="assets/images/peoples/facebook_icon.svg" alt="person facebook icon"></a>
                                 </div>
@@ -942,20 +928,20 @@
                     <div class="pt-[26px] md:pl-[25%]">
                         <p class="text-base leading-[19.36px] text-[#F9901C] mb-[15px] md:mb-3 font-semibold">যোগাযোগের মাধ্যম</p>
                         <div class="mb-[34px] md:mb-[35px]">
-                            <div class="mb-[7px] md:mb-[6px]">
+                            <div class="mb-[7px] md:mb-[6px] contact">
                                 <a class="flex items-center" href="tel:966 53 546 9321">
-                                    <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[6px]">
+                                    <span class="icon w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] mr-[6px]">
                                         <img src="assets/images/footer/phone.svg" />
                                     </span>
-                                    <span class="font-medium text-base leading-[19.6px] text-white">+966 53 546 9321</span>
+                                    <span class="val font-medium text-base leading-[19.6px] text-white">+966 53 546 9321</span>
                                 </a>
                             </div>
-                            <div>
+                            <div class="contact">
                                 <a class="flex items-center" href="mailto:support@sevenstarsbd.com">
-                                    <span class="w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] hover:bg-[#F9901C] mr-[6px]">
+                                    <span class="icon w-[34px] h-[34px] flex justify-center items-center rounded-[6px] bg-[#161F2F] mr-[6px]">
                                         <img src="assets/images/footer/email.svg">
                                     </span>
-                                    <span class="font-medium text-base leading-[19.6px] text-white">support@sevenstarsbd.com</span>
+                                    <span class="val font-medium text-base leading-[19.6px] text-white">support@sevenstarsbd.com</span>
                                 </a>
                             </div>
                         </div>
@@ -990,8 +976,8 @@
             <div class="container">
                 <div class="pt-[11px] pb-[14px] md:pt-[23px] md:pb-[21px] text-[#5A6174] text-[14px] leading-[20px] text-center relative">
                     Copyright © 2023 Seven Stars Group
-                    <button class="flex items-center justify-center w-[91px] h-[28px] md:w-[156px] md:h-[48px] default-btn hover:bg-[#F9901C] fixed bottom-[17px] right-4 md:right-[calc(8%+10px)]">
-                        <span class="text-[9px] leading-[11.67px] md:text-base md:leading-[20px] font-semibold">লাইভ চ্যাট</span>
+                    <button class="flex items-center justify-center w-[110px] h-[35px] md:w-[156px] md:h-[48px] default-btn hover:bg-[#F9901C] fixed bottom-[17px] right-4 md:right-[calc(3%)]">
+                        <span class="text-[14px] leading-[11.67px] md:text-base md:leading-[20px] md:font-semibold">লাইভ চ্যাট</span>
                         <img class="ml-[6px] md:ml-3 w-[17.5px] h-[17.5px] md:w-[30px] md:h-[30px]" src="assets/images/footer/chat.svg" alt="Seven Stars Chat">
                     </button>
                 </div>

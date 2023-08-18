@@ -4,13 +4,14 @@ $(document).ready(function(){
     // toggle menu in Mobile
     $('.navbtn').click(function(){
         $('.toggleMenu').slideToggle();
-        console.log(navFlag);
         
-        if (navFlag) {
+        if (navFlag) {            
             $('.menu-open').css('display', 'block');
             $('.menu-close').css('display', 'none');
             navFlag = false;
+            $("#header").addClass('shadow-menuShadow');
         } else {
+            $("#header").removeClass('shadow-menuShadow');
             $('.menu-open').css('display', 'none');
             $('.menu-close').css('display', 'flex');
             navFlag = true;
@@ -29,19 +30,19 @@ $(document).ready(function(){
     });
 
     // Hover Event of Person
-    $('.person-item').hover(
+    $('footer .contact').hover(        
         // hover on
         function(){
-            $(this).find('.person-name').css('display', 'none');
-            $(this).find('.social-icons').css('display', 'flex');
+            $(this).find('.icon').css({'background':'#F9901C'});
+            $(this).find('.val').css({'color':'#F9901C'});
         },
         // hover out
         function(){
-            $(this).find('.person-name').css('display', 'block');
-            $(this).find('.social-icons').css('display', 'none');
+            $(this).find('.icon').css({'background':'#161F2F'});
+            $(this).find('.val').css({'color':'#FFF'});
         }
     );
-
+    
     // Feedback Slider
     new Splide( '#feedback-slider', {
         autoplay: 'true',

@@ -572,10 +572,6 @@ video {
   visibility: visible;
 }
 
-.collapse {
-  visibility: collapse;
-}
-
 .static {
   position: static;
 }
@@ -606,6 +602,10 @@ video {
 
 .top-12 {
   top: 3rem;
+}
+
+.z-\[99999\] {
+  z-index: 99999;
 }
 
 .col-start-2 {
@@ -915,12 +915,20 @@ video {
   height: 1px;
 }
 
+.h-\[35px\] {
+  height: 35px;
+}
+
 .w-4 {
   width: 1rem;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[110px\] {
@@ -963,10 +971,6 @@ video {
   width: 80px;
 }
 
-.w-\[84px\] {
-  width: 84px;
-}
-
 .w-\[91px\] {
   width: 91px;
 }
@@ -989,10 +993,6 @@ video {
 
 .max-w-\[728px\] {
   max-width: 728px;
-}
-
-.border-collapse {
-  border-collapse: collapse;
 }
 
 .transform {
@@ -1511,10 +1511,192 @@ video {
   color: #fff;
 }
 
+header .tiktok{
+  background: url('../src/assets/images/header/tiktok_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .tiktok:hover{
+  background: url('../src/assets/images/header/tiktok_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .whatsapp{
+  background: url('../src/assets/images/header/whatsapp_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .whatsapp:hover{
+  background: url('../src/assets/images/header/whatsapp_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .facebook{
+  background: url('../src/assets/images/header/facebook_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .facebook:hover{
+  background: url('../src/assets/images/header/facebook_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .vector{
+  background: url('../src/assets/images/header/vector_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .vector:hover{
+  background: url('../src/assets/images/header/vector_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .linkedin{
+  background: url('../src/assets/images/header/linkedin_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .linkedin:hover{
+  background: url('../src/assets/images/header/linkedin_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .instagram{
+  background: url('../src/assets/images/header/instagram_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .instagram:hover{
+  background: url('../src/assets/images/header/instagram_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .youtube{
+  background: url('../src/assets/images/header/youtube_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .youtube:hover{
+  background: url('../src/assets/images/header/youtube_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .phone{
+  background: url('../src/assets/images/header/phone_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+header .call:hover>.phone{
+  background: url('../src/assets/images/header/phone_hover_icon.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+#nav-menu .nav-tiktok{
+  background: url('../src/assets/images/header/tiktok.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #EDF0F7;
+}
+
+#nav-menu .nav-tiktok:hover{
+  background: url('../src/assets/images/header/tiktok_icon.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #F9901C;
+}
+
+#nav-menu .nav-whatsapp{
+  background: url('../src/assets/images/header/whatsapp.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #EDF0F7;
+}
+
+#nav-menu .nav-whatsapp:hover{
+  background: url('../src/assets/images/header/whatsapp_icon.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #F9901C;
+}
+
+#nav-menu .nav-facebook{
+  background: url('../src/assets/images/header/facebook.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #EDF0F7;
+}
+
+#nav-menu .nav-facebook:hover{
+  background: url('../src/assets/images/header/facebook_icon.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #F9901C;
+}
+
+#nav-menu .nav-instagram{
+  background: url('../src/assets/images/header/instagram.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #EDF0F7;
+}
+
+#nav-menu .nav-instagram:hover{
+  background: url('../src/assets/images/header/instagram_icon.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #F9901C;
+}
+
+#nav-menu .nav-vector{
+  background: url('../src/assets/images/header/vector.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #EDF0F7;
+}
+
+#nav-menu .nav-vector:hover{
+  background: url('../src/assets/images/header/vector_icon.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #F9901C;
+}
+
+#nav-menu .nav-linkedin{
+  background: url('../src/assets/images/header/linkedin.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #EDF0F7;
+}
+
+#nav-menu .nav-linkedin:hover{
+  background: url('../src/assets/images/header/linkedin_icon.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #F9901C;
+}
+
+#nav-menu .nav-youtube{
+  background: url('../src/assets/images/header/youtube.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #EDF0F7;
+}
+
+#nav-menu .nav-youtube:hover{
+  background: url('../src/assets/images/header/youtube_icon.svg') no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #F9901C;
+}
+
 .service-item{
   display: flex;
   border: 2px solid rgba(0, 42, 147, 0.15);
   border-radius: 9px;
+}
+
+.service-item:hover{
+  box-shadow: 4px 4px 15px -3px rgba(0, 42, 147, 0.15), 8px 8px 6px -4px rgb(255 255 255 / 10%);
 }
 
 .service-item .img{
@@ -1535,13 +1717,35 @@ video {
   font-size: 20px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   line-height: 24.2px;
   padding-right: 18px;
   padding-left: 18px;
   border-start-end-radius: 9px;
   border-end-end-radius: 9px;
+}
+
+.person-item .social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #002A93;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  height: 54px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/*flex justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px] opacity-0 top-0 absolute w-full*/
+
+.person-item:hover .social-icons{
+  opacity: 1;
+  transition: all 0.5s ease-out;
 }
 
 /** Slide **/
@@ -1575,6 +1779,10 @@ video {
     margin-bottom: 7px;
   }
 
+  .service-item img{
+    width: 26px;
+  }
+
   .service-item .subject{
     font-size: 15px;
     line-height: 18px;
@@ -1583,6 +1791,11 @@ video {
   .footer-link a{
     margin-bottom: 15px;
   }
+}
+
+.hover\:border-\[\#F9901C\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 144 28 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#F9901C\]:hover {
@@ -1599,14 +1812,43 @@ video {
   color: rgb(0 42 147 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#F9901C\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 144 28 / var(--tw-text-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:shadow-card:hover {
+  --tw-shadow: 6px 6px 12px -1px rgb(37 37 37 / 15%), 15px 15px 25px -6px rgb(255 255 255 / 10%);;
+  --tw-shadow-colored: 6px 6px 12px -1px var(--tw-shadow-color), 15px 15px 25px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-service:hover {
+  --tw-shadow: 3px 3px 15px -3px #7d7dee, 6px 6px 6px -4px rgb(255 255 255 / 10%);;
+  --tw-shadow-colored: 3px 3px 15px -3px var(--tw-shadow-color), 6px 6px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 @media (min-width: 768px) {
   .md\:right-\[calc\(8\%\+10px\)\] {
     right: calc(8% + 10px);
+  }
+
+  .md\:right-\[calc\(8\%\)\] {
+    right: calc(8%);
+  }
+
+  .md\:right-\[calc\(5\%\)\] {
+    right: calc(5%);
+  }
+
+  .md\:right-\[calc\(3\%\)\] {
+    right: calc(3%);
   }
 
   .md\:mx-1 {
@@ -1932,6 +2174,10 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600;
   }
 
   .md\:leading-\[20px\] {

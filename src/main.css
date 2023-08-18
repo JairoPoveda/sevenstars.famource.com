@@ -22,10 +22,164 @@
     font-size: 16px;
     color: #fff;
 }
+header .tiktok{
+    background: url('../src/assets/images/header/tiktok_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .tiktok:hover{
+    background: url('../src/assets/images/header/tiktok_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .whatsapp{
+    background: url('../src/assets/images/header/whatsapp_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .whatsapp:hover{
+    background: url('../src/assets/images/header/whatsapp_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .facebook{
+    background: url('../src/assets/images/header/facebook_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .facebook:hover{
+    background: url('../src/assets/images/header/facebook_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .vector{
+    background: url('../src/assets/images/header/vector_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .vector:hover{
+    background: url('../src/assets/images/header/vector_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .linkedin{
+    background: url('../src/assets/images/header/linkedin_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .linkedin:hover{
+    background: url('../src/assets/images/header/linkedin_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .instagram{
+    background: url('../src/assets/images/header/instagram_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .instagram:hover{
+    background: url('../src/assets/images/header/instagram_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .youtube{
+    background: url('../src/assets/images/header/youtube_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .youtube:hover{
+    background: url('../src/assets/images/header/youtube_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .phone{
+    background: url('../src/assets/images/header/phone_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+header .call:hover>.phone{
+    background: url('../src/assets/images/header/phone_hover_icon.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+#nav-menu .nav-tiktok{
+    background: url('../src/assets/images/header/tiktok.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #EDF0F7;    
+}
+#nav-menu .nav-tiktok:hover{
+    background: url('../src/assets/images/header/tiktok_icon.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #F9901C; 
+}
+#nav-menu .nav-whatsapp{
+    background: url('../src/assets/images/header/whatsapp.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #EDF0F7;    
+}
+#nav-menu .nav-whatsapp:hover{
+    background: url('../src/assets/images/header/whatsapp_icon.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #F9901C; 
+}
+#nav-menu .nav-facebook{
+    background: url('../src/assets/images/header/facebook.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #EDF0F7;    
+}
+#nav-menu .nav-facebook:hover{
+    background: url('../src/assets/images/header/facebook_icon.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #F9901C; 
+}
+#nav-menu .nav-instagram{
+    background: url('../src/assets/images/header/instagram.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #EDF0F7;    
+}
+#nav-menu .nav-instagram:hover{
+    background: url('../src/assets/images/header/instagram_icon.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #F9901C; 
+}
+#nav-menu .nav-vector{
+    background: url('../src/assets/images/header/vector.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #EDF0F7;    
+}
+#nav-menu .nav-vector:hover{
+    background: url('../src/assets/images/header/vector_icon.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #F9901C; 
+}
+#nav-menu .nav-linkedin{
+    background: url('../src/assets/images/header/linkedin.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #EDF0F7;    
+}
+#nav-menu .nav-linkedin:hover{
+    background: url('../src/assets/images/header/linkedin_icon.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #F9901C; 
+}
+#nav-menu .nav-youtube{
+    background: url('../src/assets/images/header/youtube.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #EDF0F7;    
+}
+#nav-menu .nav-youtube:hover{
+    background: url('../src/assets/images/header/youtube_icon.svg') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    background-color: #F9901C; 
+}
+
+
 .service-item{
     display: flex;
     border: 2px solid rgba(0, 42, 147, 0.15);
     border-radius: 9px;
+}
+.service-item:hover{
+    box-shadow: 4px 4px 15px -3px rgba(0, 42, 147, 0.15), 8px 8px 6px -4px rgb(255 255 255 / 10%);
 }
 .service-item .img{
     width: 68px;
@@ -44,13 +198,32 @@
     font-size: 20px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     line-height: 24.2px;
     padding-right: 18px;
     padding-left: 18px;
     border-start-end-radius: 9px;
     border-end-end-radius: 9px;
+}
+.person-item .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #002A93;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    height: 54px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+/*flex justify-center items-center bg-[#002A93] rounded-b-[14px] h-[54px] opacity-0 top-0 absolute w-full*/
+.person-item:hover .social-icons{
+    opacity: 1;
+    transition: all 0.5s ease-out;    
 }
 /** Slide **/
 .splide__pagination{
@@ -77,6 +250,9 @@
 @media (max-width: 640px) { 
     .service-item{
         margin-bottom: 7px;
+    }
+    .service-item img{ 
+        width: 26px;
     }
     .service-item .subject{
         font-size: 15px;
